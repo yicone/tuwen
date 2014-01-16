@@ -16,7 +16,7 @@ import android.widget.Toast;
 import com.lutours.tuwen.R;
 
 /**
- * Created by xdzheng on 14-1-16.
+ * ฬแฮสาณ
  */
 public class AskFrag extends Fragment {
 	private static final int CAMERA_REQUEST = 1888;
