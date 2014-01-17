@@ -3,7 +3,7 @@
           package="com.lutours.tuwen"
           android:versionCode="1"
           android:versionName="1.0">
-    <uses-sdk android:minSdkVersion="17"/>
+    <uses-sdk android:minSdkVersion="15"/>
     <!--http://stackoverflow.com/questions/5991319/capture-image-from-camera-and-display-in-activity/5991757#5991757-->
     <uses-feature android:name="android.hardware.camera"></uses-feature>
     <uses-feature android:name="android.hardware.camera.autofocus"/>
