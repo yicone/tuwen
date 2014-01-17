@@ -3,39 +3,48 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/photo">
+                android:layout_height="match_parent">
+    <ImageView android:id="@+id/ivPhoto" android:layout_width="match_parent" android:layout_height="match_parent"
+               android:scaleType="center"
+               android:src="@drawable/photo"/>
     <LinearLayout
-            android:id="@+id/card"
+            android:id="@+id/question_container"
             android:layout_width="match_parent" android:layout_height="wrap_content"
             android:layout_marginTop="60dp"
             android:padding="10dp"
             android:background="#FFFFFF"
             android:alpha="0.5"
+            android:focusable="true"
             android:orientation="vertical">
-        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
-            <LinearLayout android:id="@+id/avatar" android:layout_width="wrap_content"
-                          android:layout_height="wrap_content"
-                          android:orientation="horizontal"
-                          android:gravity="center"
-                    >
-                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                           android:layout_marginRight="5dp"
-                           android:src="@drawable/avatar"/>
-                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                          android:text="donyang"
-                          android:textColor="#000000"
-                        />
-            </LinearLayout>
-        </LinearLayout>
+        <!--<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">-->
+        <!--<LinearLayout android:id="@+id/avatar" android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:gravity="center"-->
+        <!-->-->
+        <!--<ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"-->
+        <!--android:layout_marginRight="5dp"-->
+        <!--android:src="@drawable/avatar"/>-->
+        <!--<TextView android:layout_width="wrap_content" android:layout_height="wrap_content"-->
+        <!--android:text="donyang"-->
+        <!--android:textColor="#000000"-->
+        <!--/>-->
+        <!--</LinearLayout>-->
+        <!--</LinearLayout>-->
 
-        <TextView android:id="@+id/question" android:layout_width="match_parent" android:layout_height="wrap_content"
+        <EditText android:id="@+id/question" android:layout_width="match_parent" android:layout_height="wrap_content"
                   android:padding="10dp"
                   android:text="这个岛上有酒店吗?"
-                  android:textColor="#000000"/>
+                  android:textColor="#000000" android:inputType="textImeMultiLine"
+                >
+            <requestFocus />
+        </EditText>
 
 
     </LinearLayout>
+
+    <!--<Button android:id="@+id/btnTestAnim" android:layout_width="wrap_content" android:layout_height="40dp"-->
+    <!--android:text="Test Anim"/>-->
 
     <RelativeLayout android:id="@+id/bottom_bar"
                     android:layout_width="match_parent" android:layout_height="40dp"
