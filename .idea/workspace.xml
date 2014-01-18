@@ -15,12 +15,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30888139-0cb0-4788-aaed-9f72f155bf48" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/anim/move_down.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/anim/move_up.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/ask_dialog.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lutours/tuwen/view/AskFrag.java" afterPath="$PROJECT_DIR$/src/com/lutours/tuwen/view/AskFrag.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/ask_frag.xml" afterPath="$PROJECT_DIR$/res/layout/ask_frag.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tuwen.iml" afterPath="$PROJECT_DIR$/tuwen.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tuwen.iws" />
@@ -85,19 +82,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AskFrag.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="AskFrag.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/AskFrag.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="95" column="33" selection-start="3645" selection-end="3645" vertical-scroll-proportion="0.59183675" vertical-offset="720" max-vertical-offset="1695">
+            <state line="68" column="39" selection-start="2490" selection-end="2513" vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="1965">
               <folding>
-                <element signature="e#1416#1629#0" expanded="true" />
-                <element signature="e#1618#1619#0" expanded="true" />
-                <element signature="e#1685#1909#0" expanded="true" />
-                <element signature="e#1898#1899#0" expanded="true" />
-                <element signature="e#1957#3872#0" expanded="true" />
-                <element signature="e#3861#3862#0" expanded="true" />
-                <element signature="e#4003#4313#0" expanded="true" />
-                <element signature="e#4302#4303#0" expanded="true" />
+                <element signature="e#1456#1669#0" expanded="true" />
+                <element signature="e#1658#1659#0" expanded="true" />
+                <element signature="e#1765#2075#0" expanded="true" />
+                <element signature="e#2064#2065#0" expanded="true" />
+                <element signature="e#2116#5719#0" expanded="true" />
+                <element signature="e#3072#3336#0" expanded="true" />
+                <element signature="e#3317#3318#0" expanded="true" />
+                <element signature="e#3392#5619#0" expanded="true" />
+                <element signature="e#5600#5601#0" expanded="true" />
+                <element signature="e#5708#5709#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -109,7 +108,19 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="0" selection-start="1875" selection-end="1875" vertical-scroll-proportion="-10.096154" vertical-offset="45" max-vertical-offset="1410">
+            <state line="27" column="8" selection-start="1383" selection-end="2683" vertical-scroll-proportion="-3.6153846" vertical-offset="217" max-vertical-offset="900">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ask_dialog.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/res/layout/ask_dialog.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="42" selection-start="1802" selection-end="1802" vertical-scroll-proportion="1.1670481" vertical-offset="0" max-vertical-offset="1125">
               <folding />
             </state>
           </provider>
@@ -133,6 +144,7 @@
         <option value="$PROJECT_DIR$/res/anim/move_up.xml" />
         <option value="$PROJECT_DIR$/res/anim/move_down.xml" />
         <option value="$PROJECT_DIR$/res/layout/ask_frag.xml" />
+        <option value="$PROJECT_DIR$/res/layout/ask_dialog.xml" />
         <option value="$PROJECT_DIR$/src/com/lutours/tuwen/view/AskFrag.java" />
       </list>
     </option>
@@ -140,7 +152,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
     <option name="width" value="1920" />
-    <option name="height" value="1124" />
+    <option name="height" value="878" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -507,30 +519,30 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1920" height="1124" extended-state="6" />
+    <frame x="0" y="22" width="1920" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24040511" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24040511" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4085487" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2415507" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31973684" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32902583" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2415507" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31973684" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18636848" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18656716" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3280318" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -563,14 +575,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="5" selection-start="1163" selection-end="1163" vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="765">
           <folding>
-            <element signature="e#1416#1629#0" expanded="true" />
-            <element signature="e#1618#1619#0" expanded="true" />
-            <element signature="e#1685#1909#0" expanded="true" />
-            <element signature="e#1898#1899#0" expanded="true" />
-            <element signature="e#1957#3872#0" expanded="true" />
-            <element signature="e#3861#3862#0" expanded="true" />
-            <element signature="e#4003#4313#0" expanded="true" />
-            <element signature="e#4302#4303#0" expanded="true" />
+            <element signature="e#1456#1669#0" expanded="true" />
+            <element signature="e#1658#1659#0" expanded="true" />
+            <element signature="e#1765#2075#0" expanded="true" />
+            <element signature="e#2064#2065#0" expanded="true" />
+            <element signature="e#2116#5719#0" expanded="true" />
+            <element signature="e#3072#3336#0" expanded="true" />
+            <element signature="e#3317#3318#0" expanded="true" />
+            <element signature="e#3392#5619#0" expanded="true" />
+            <element signature="e#5600#5601#0" expanded="true" />
+            <element signature="e#5708#5709#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -596,14 +610,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="45" column="1" selection-start="1466" selection-end="1466" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
           <folding>
-            <element signature="e#1416#1629#0" expanded="true" />
-            <element signature="e#1618#1619#0" expanded="true" />
-            <element signature="e#1685#1909#0" expanded="true" />
-            <element signature="e#1898#1899#0" expanded="true" />
-            <element signature="e#1957#3872#0" expanded="true" />
-            <element signature="e#3861#3862#0" expanded="true" />
-            <element signature="e#4003#4313#0" expanded="true" />
-            <element signature="e#4302#4303#0" expanded="true" />
+            <element signature="e#1456#1669#0" expanded="true" />
+            <element signature="e#1658#1659#0" expanded="true" />
+            <element signature="e#1765#2075#0" expanded="true" />
+            <element signature="e#2064#2065#0" expanded="true" />
+            <element signature="e#2116#5719#0" expanded="true" />
+            <element signature="e#3072#3336#0" expanded="true" />
+            <element signature="e#3317#3318#0" expanded="true" />
+            <element signature="e#3392#5619#0" expanded="true" />
+            <element signature="e#5600#5601#0" expanded="true" />
+            <element signature="e#5708#5709#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -612,14 +628,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="31" selection-start="31" selection-end="31" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
           <folding>
-            <element signature="e#1416#1629#0" expanded="true" />
-            <element signature="e#1618#1619#0" expanded="true" />
-            <element signature="e#1685#1909#0" expanded="true" />
-            <element signature="e#1898#1899#0" expanded="true" />
-            <element signature="e#1957#3872#0" expanded="true" />
-            <element signature="e#3861#3862#0" expanded="true" />
-            <element signature="e#4003#4313#0" expanded="true" />
-            <element signature="e#4302#4303#0" expanded="true" />
+            <element signature="e#1456#1669#0" expanded="true" />
+            <element signature="e#1658#1659#0" expanded="true" />
+            <element signature="e#1765#2075#0" expanded="true" />
+            <element signature="e#2064#2065#0" expanded="true" />
+            <element signature="e#2116#5719#0" expanded="true" />
+            <element signature="e#3072#3336#0" expanded="true" />
+            <element signature="e#3317#3318#0" expanded="true" />
+            <element signature="e#3392#5619#0" expanded="true" />
+            <element signature="e#5600#5601#0" expanded="true" />
+            <element signature="e#5708#5709#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -628,14 +646,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="31" selection-start="31" selection-end="31" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
           <folding>
-            <element signature="e#1416#1629#0" expanded="true" />
-            <element signature="e#1618#1619#0" expanded="true" />
-            <element signature="e#1685#1909#0" expanded="true" />
-            <element signature="e#1898#1899#0" expanded="true" />
-            <element signature="e#1957#3872#0" expanded="true" />
-            <element signature="e#3861#3862#0" expanded="true" />
-            <element signature="e#4003#4313#0" expanded="true" />
-            <element signature="e#4302#4303#0" expanded="true" />
+            <element signature="e#1456#1669#0" expanded="true" />
+            <element signature="e#1658#1659#0" expanded="true" />
+            <element signature="e#1765#2075#0" expanded="true" />
+            <element signature="e#2064#2065#0" expanded="true" />
+            <element signature="e#2116#5719#0" expanded="true" />
+            <element signature="e#3072#3336#0" expanded="true" />
+            <element signature="e#3317#3318#0" expanded="true" />
+            <element signature="e#3392#5619#0" expanded="true" />
+            <element signature="e#5600#5601#0" expanded="true" />
+            <element signature="e#5708#5709#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -644,14 +664,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="13" selection-start="529" selection-end="529" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="585">
           <folding>
-            <element signature="e#1416#1629#0" expanded="true" />
-            <element signature="e#1618#1619#0" expanded="true" />
-            <element signature="e#1685#1909#0" expanded="true" />
-            <element signature="e#1898#1899#0" expanded="true" />
-            <element signature="e#1957#3872#0" expanded="true" />
-            <element signature="e#3861#3862#0" expanded="true" />
-            <element signature="e#4003#4313#0" expanded="true" />
-            <element signature="e#4302#4303#0" expanded="true" />
+            <element signature="e#1456#1669#0" expanded="true" />
+            <element signature="e#1658#1659#0" expanded="true" />
+            <element signature="e#1765#2075#0" expanded="true" />
+            <element signature="e#2064#2065#0" expanded="true" />
+            <element signature="e#2116#5719#0" expanded="true" />
+            <element signature="e#3072#3336#0" expanded="true" />
+            <element signature="e#3317#3318#0" expanded="true" />
+            <element signature="e#3392#5619#0" expanded="true" />
+            <element signature="e#5600#5601#0" expanded="true" />
+            <element signature="e#5708#5709#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -660,14 +682,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="13" selection-start="529" selection-end="529" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="585">
           <folding>
-            <element signature="e#1416#1629#0" expanded="true" />
-            <element signature="e#1618#1619#0" expanded="true" />
-            <element signature="e#1685#1909#0" expanded="true" />
-            <element signature="e#1898#1899#0" expanded="true" />
-            <element signature="e#1957#3872#0" expanded="true" />
-            <element signature="e#3861#3862#0" expanded="true" />
-            <element signature="e#4003#4313#0" expanded="true" />
-            <element signature="e#4302#4303#0" expanded="true" />
+            <element signature="e#1456#1669#0" expanded="true" />
+            <element signature="e#1658#1659#0" expanded="true" />
+            <element signature="e#1765#2075#0" expanded="true" />
+            <element signature="e#2064#2065#0" expanded="true" />
+            <element signature="e#2116#5719#0" expanded="true" />
+            <element signature="e#3072#3336#0" expanded="true" />
+            <element signature="e#3317#3318#0" expanded="true" />
+            <element signature="e#3392#5619#0" expanded="true" />
+            <element signature="e#5600#5601#0" expanded="true" />
+            <element signature="e#5708#5709#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -684,24 +708,36 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="0" selection-start="1875" selection-end="1875" vertical-scroll-proportion="-10.096154" vertical-offset="45" max-vertical-offset="1410">
+        <state line="27" column="8" selection-start="1383" selection-end="2683" vertical-scroll-proportion="-3.6153846" vertical-offset="217" max-vertical-offset="900">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/AskFrag.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="33" selection-start="3645" selection-end="3645" vertical-scroll-proportion="0.59183675" vertical-offset="720" max-vertical-offset="1695">
+        <state line="68" column="39" selection-start="2490" selection-end="2513" vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="1965">
           <folding>
-            <element signature="e#1416#1629#0" expanded="true" />
-            <element signature="e#1618#1619#0" expanded="true" />
-            <element signature="e#1685#1909#0" expanded="true" />
-            <element signature="e#1898#1899#0" expanded="true" />
-            <element signature="e#1957#3872#0" expanded="true" />
-            <element signature="e#3861#3862#0" expanded="true" />
-            <element signature="e#4003#4313#0" expanded="true" />
-            <element signature="e#4302#4303#0" expanded="true" />
+            <element signature="e#1456#1669#0" expanded="true" />
+            <element signature="e#1658#1659#0" expanded="true" />
+            <element signature="e#1765#2075#0" expanded="true" />
+            <element signature="e#2064#2065#0" expanded="true" />
+            <element signature="e#2116#5719#0" expanded="true" />
+            <element signature="e#3072#3336#0" expanded="true" />
+            <element signature="e#3317#3318#0" expanded="true" />
+            <element signature="e#3392#5619#0" expanded="true" />
+            <element signature="e#5600#5601#0" expanded="true" />
+            <element signature="e#5708#5709#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/ask_dialog.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="42" selection-start="1802" selection-end="1802" vertical-scroll-proportion="1.1670481" vertical-offset="0" max-vertical-offset="1125">
+          <folding />
         </state>
       </provider>
     </entry>

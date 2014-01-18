@@ -10,42 +10,7 @@
                android:focusable="true"
                android:focusableInTouchMode="true"
                android:clickable="true"/>
-    <LinearLayout
-            android:id="@+id/question_container"
-            android:layout_width="match_parent" android:layout_height="wrap_content"
-            android:layout_marginTop="60dp"
-            android:padding="10dp"
-            android:background="#FFFFFF"
-            android:alpha="0.5"
-            android:focusable="true"
-            android:focusableInTouchMode="true"
-            android:clickable="true"
-            android:orientation="vertical">
-        <!--<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">-->
-        <!--<LinearLayout android:id="@+id/avatar" android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:orientation="horizontal"-->
-        <!--android:gravity="center"-->
-        <!-->-->
-        <!--<ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"-->
-        <!--android:layout_marginRight="5dp"-->
-        <!--android:src="@drawable/avatar"/>-->
-        <!--<TextView android:layout_width="wrap_content" android:layout_height="wrap_content"-->
-        <!--android:text="donyang"-->
-        <!--android:textColor="#000000"-->
-        <!--/>-->
-        <!--</LinearLayout>-->
-        <!--</LinearLayout>-->
 
-        <EditText android:id="@+id/question" android:layout_width="match_parent" android:layout_height="wrap_content"
-                  android:padding="10dp"
-                  android:text="这个岛上有酒店吗?"
-                  android:textColor="#000000" android:inputType="textImeMultiLine"
-                >
-        </EditText>
-
-
-    </LinearLayout>
 
     <!--<Button android:id="@+id/btnTestAnim" android:layout_width="wrap_content" android:layout_height="40dp"-->
     <!--android:text="Test Anim"/>-->
@@ -60,28 +25,29 @@
                      android:layout_marginLeft="10dp"
                      android:src="@drawable/camera_icon"
                      android:background="#FFFFFF"/>
-        <LinearLayout android:layout_width="wrap_content" android:layout_height="match_parent"
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
                       android:layout_alignParentRight="true"
                       android:orientation="horizontal"
                       android:gravity="center"
                 >
-            <ImageButton
-                    android:id="@+id/wechat"
-                    android:layout_width="wrap_content" android:layout_height="wrap_content"
-                    android:layout_marginRight="5dp"
-                    android:src="@drawable/wechat_icon"
-                    android:background="#FFFFFF"/>
-            <ImageButton android:id="@+id/weibo" android:layout_width="wrap_content"
-                         android:layout_height="wrap_content"
-                         android:layout_marginRight="10dp"
-                         android:src="@drawable/weibo_icon"
-                         android:background="#FFFFFF"/>
-            <TextView android:layout_width="80dp" android:layout_height="match_parent"
-                      android:background="#FFFFFF"
-                      android:alpha="1.0"
-                      android:gravity="center"
-                      android:text="提问"
-                      android:textSize="18dp"/>
+            <!--<ImageButton-->
+            <!--android:id="@+id/wechat"-->
+            <!--android:layout_width="wrap_content" android:layout_height="wrap_content"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--android:src="@drawable/wechat_icon"-->
+            <!--android:background="#FFFFFF"/>-->
+            <!--<ImageButton android:id="@+id/weibo" android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:src="@drawable/weibo_icon"-->
+            <!--android:background="#FFFFFF"/>-->
+            <Button android:id="@+id/btnAnswer" android:layout_width="80dp" android:layout_height="match_parent"
+                    android:background="#FFFFFF"
+                    android:alpha="1.0"
+                    android:gravity="center"
+                    android:text="提问"
+                    android:textSize="18dp"
+                    android:textColor="#000000"/>
         </LinearLayout>
 
     </RelativeLayout>
