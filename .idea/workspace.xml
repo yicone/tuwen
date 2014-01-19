@@ -15,8 +15,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30888139-0cb0-4788-aaed-9f72f155bf48" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/ask_dialog.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lutours/tuwen/view/AskFrag.java" afterPath="$PROJECT_DIR$/src/com/lutours/tuwen/view/AskFrag.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/lutours/tuwen/view/DrawingView.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/lutours/tuwen/view/MotionMode.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lutours/tuwen/view/MainActivity.java" afterPath="$PROJECT_DIR$/src/com/lutours/tuwen/view/MainActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/ask_frag.xml" afterPath="$PROJECT_DIR$/res/layout/ask_frag.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -85,7 +86,7 @@
       <file leaf-file-name="AskFrag.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/AskFrag.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="39" selection-start="2490" selection-end="2513" vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="1965">
+            <state line="82" column="19" selection-start="3338" selection-end="3338" vertical-scroll-proportion="0.0" vertical-offset="555" max-vertical-offset="1965">
               <folding>
                 <element signature="e#1456#1669#0" expanded="true" />
                 <element signature="e#1658#1659#0" expanded="true" />
@@ -102,25 +103,60 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="DrawingView.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/DrawingView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="24" selection-start="749" selection-end="760" vertical-scroll-proportion="0.62347186" vertical-offset="60" max-vertical-offset="2970">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1307#1450#0" expanded="true" />
+                <element signature="e#1443#1444#0" expanded="true" />
+                <element signature="e#1502#1645#0" expanded="true" />
+                <element signature="e#1638#1639#0" expanded="true" />
+                <element signature="e#1692#1835#0" expanded="true" />
+                <element signature="e#1828#1829#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/MainActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="54" selection-start="895" selection-end="895" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MotionMode.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/MotionMode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="14" selection-start="168" selection-end="168" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="ask_frag.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/layout/ask_frag.xml">
           <provider editor-type-id="android-designer">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="8" selection-start="1383" selection-end="2683" vertical-scroll-proportion="-3.6153846" vertical-offset="217" max-vertical-offset="900">
+            <state line="9" column="51" selection-start="561" selection-end="564" vertical-scroll-proportion="-1.7307693" vertical-offset="45" max-vertical-offset="915">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ask_dialog.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ask_dialog.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/layout/ask_dialog.xml">
           <provider editor-type-id="android-designer">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="42" selection-start="1802" selection-end="1802" vertical-scroll-proportion="1.1670481" vertical-offset="0" max-vertical-offset="1125">
+            <state line="19" column="29" selection-start="933" selection-end="942" vertical-scroll-proportion="0.8269231" vertical-offset="328" max-vertical-offset="1125">
               <folding />
             </state>
           </provider>
@@ -143,16 +179,20 @@
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/res/anim/move_up.xml" />
         <option value="$PROJECT_DIR$/res/anim/move_down.xml" />
-        <option value="$PROJECT_DIR$/res/layout/ask_frag.xml" />
         <option value="$PROJECT_DIR$/res/layout/ask_dialog.xml" />
         <option value="$PROJECT_DIR$/src/com/lutours/tuwen/view/AskFrag.java" />
+        <option value="$PROJECT_DIR$/src/com/lutours/tuwen/view/MotionMode.java" />
+        <option value="$PROJECT_DIR$/res/layout/ask_frag.xml" />
+        <option value="$PROJECT_DIR$/src/com/lutours/tuwen/view/MainActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/lutours/tuwen/view/DrawingView.java" />
+        <option value="$PROJECT_DIR$/src/com/lutours/tuwen/view/DrawingPanel.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
     <option name="width" value="1920" />
-    <option name="height" value="878" />
+    <option name="height" value="824" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -234,70 +274,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tuwen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tuwen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="values" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tuwen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tuwen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tuwen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tuwen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tuwen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tuwen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -333,6 +309,9 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/res/anim" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.lutours.tuwen.view" />
     </key>
   </component>
   <component name="RunManager" selected="Android Application.tuwen">
@@ -519,30 +498,30 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1920" height="878" extended-state="6" />
+    <frame x="0" y="22" width="1920" height="824" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24040511" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24040511" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4085487" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31973684" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34419262" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32902583" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31973684" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34419262" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18656716" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18636848" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3280318" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -703,19 +682,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/ask_frag.xml">
+    <entry file="file://$PROJECT_DIR$/res/layout/ask_dialog.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="8" selection-start="1383" selection-end="2683" vertical-scroll-proportion="-3.6153846" vertical-offset="217" max-vertical-offset="900">
+        <state line="19" column="29" selection-start="933" selection-end="942" vertical-scroll-proportion="0.8269231" vertical-offset="328" max-vertical-offset="1125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/MotionMode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="14" selection-start="168" selection-end="168" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/AskFrag.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="39" selection-start="2490" selection-end="2513" vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="1965">
+        <state line="82" column="19" selection-start="3338" selection-end="3338" vertical-scroll-proportion="0.0" vertical-offset="555" max-vertical-offset="1965">
           <folding>
             <element signature="e#1456#1669#0" expanded="true" />
             <element signature="e#1658#1659#0" expanded="true" />
@@ -731,13 +717,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/ask_dialog.xml">
+    <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="54" selection-start="895" selection-end="895" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/ask_frag.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="42" selection-start="1802" selection-end="1802" vertical-scroll-proportion="1.1670481" vertical-offset="0" max-vertical-offset="1125">
+        <state line="9" column="51" selection-start="561" selection-end="564" vertical-scroll-proportion="-1.7307693" vertical-offset="45" max-vertical-offset="915">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/DrawingView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="24" selection-start="749" selection-end="760" vertical-scroll-proportion="0.62347186" vertical-offset="60" max-vertical-offset="2970">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1307#1450#0" expanded="true" />
+            <element signature="e#1443#1444#0" expanded="true" />
+            <element signature="e#1502#1645#0" expanded="true" />
+            <element signature="e#1638#1639#0" expanded="true" />
+            <element signature="e#1692#1835#0" expanded="true" />
+            <element signature="e#1828#1829#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

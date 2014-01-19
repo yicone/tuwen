@@ -16,6 +16,7 @@ public class MainActivity extends FragmentActivity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+        // setContentView(new DrawingView(this, null));
 		setContentView(R.layout.main);
 
 		Fragment askFrag = new AskFrag();

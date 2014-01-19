@@ -4,12 +4,13 @@
                 android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
-    <ImageView android:id="@+id/ivPhoto" android:layout_width="match_parent" android:layout_height="match_parent"
-               android:scaleType="fitXY"
-               android:src="@drawable/photo"
-               android:focusable="true"
-               android:focusableInTouchMode="true"
-               android:clickable="true"/>
+    <com.lutours.tuwen.view.DrawingView android:id="@+id/ivPhoto" android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:scaleType="fitXY"
+                                        android:src="@drawable/photo"
+                                        android:focusable="true"
+                                        android:focusableInTouchMode="true"
+                                        android:clickable="true"/>
 
 
     <!--<Button android:id="@+id/btnTestAnim" android:layout_width="wrap_content" android:layout_height="40dp"-->
