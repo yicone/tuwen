@@ -3,44 +3,18 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="#6BA9B8">
-    <!-- TODO https://github.com/sephiroth74/ImageViewZoom-->
-    <ImageView android:id="@+id/photo" android:layout_width="match_parent" android:layout_height="match_parent"
-               android:src="@drawable/photo"
-               android:scaleType="center"/>
-    <LinearLayout
-            android:id="@+id/question_container"
-            android:layout_width="match_parent" android:layout_height="wrap_content"
-            android:layout_marginTop="60dp"
-            android:padding="10dp"
-            android:background="#FFFFFF"
-            android:alpha="0.5"
-            android:orientation="vertical">
-        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
-            <LinearLayout android:id="@+id/avatar" android:layout_width="wrap_content"
-                          android:layout_height="wrap_content"
-                          android:orientation="horizontal"
-                          android:gravity="center"
-                          android:visibility="gone">
-                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                           android:layout_marginRight="5dp"
-                           android:src="@drawable/avatar"/>
-                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                          android:text="donyang"
-                          android:textColor="#000000"
-                        />
-            </LinearLayout>
-        </LinearLayout>
-
-        <EditText android:id="@+id/question" android:layout_width="match_parent" android:layout_height="wrap_content"
-                  android:padding="10dp"
-                  android:text="问题: 这是马尔代夫群岛中最大的那个吗?"
-                  android:textColor="#000000"
-                  android:focusable="true"/>
+                android:layout_height="match_parent">
+    <com.lutours.tuwen.view.DrawingView android:id="@+id/ivPhoto" android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:scaleType="fitXY"
+                                        android:src="@drawable/photo"
+                                        android:focusable="true"
+                                        android:focusableInTouchMode="true"
+                                        android:clickable="true"/>
 
 
-    </LinearLayout>
+    <!--<Button android:id="@+id/btnTestAnim" android:layout_width="wrap_content" android:layout_height="40dp"-->
+    <!--android:text="Test Anim"/>-->
 
     <RelativeLayout android:id="@+id/bottom_bar"
                     android:layout_width="match_parent" android:layout_height="40dp"
@@ -52,29 +26,15 @@
                      android:layout_marginLeft="10dp"
                      android:src="@drawable/camera_icon"
                      android:background="#FFFFFF"/>
-        <LinearLayout android:layout_width="wrap_content" android:layout_height="match_parent"
-                      android:layout_alignParentRight="true"
-                      android:orientation="horizontal"
-                      android:gravity="center"
-                >
-            <ImageButton
-                    android:id="@+id/wechat"
-                    android:layout_width="wrap_content" android:layout_height="wrap_content"
-                    android:layout_marginRight="5dp"
-                    android:src="@drawable/wechat_icon"
-                    android:background="#FFFFFF"/>
-            <ImageButton android:id="@+id/weibo" android:layout_width="wrap_content"
-                         android:layout_height="wrap_content"
-                         android:layout_marginRight="10dp"
-                         android:src="@drawable/weibo_icon"
-                         android:background="#FFFFFF"/>
-            <TextView android:layout_width="80dp" android:layout_height="match_parent"
-                      android:background="#FFFFFF"
-                      android:alpha="1.0"
-                      android:gravity="center"
-                      android:text="提问"
-                      android:textSize="18dp"/>
-        </LinearLayout>
+
+        <Button android:id="@+id/btnAnswer" android:layout_width="80dp" android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="#FFFFFF"
+                android:alpha="1.0"
+                android:gravity="center"
+                android:text="提问"
+                android:textSize="18dp"
+                android:textColor="#000000"/>
 
     </RelativeLayout>
 
