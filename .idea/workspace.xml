@@ -15,18 +15,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30888139-0cb0-4788-aaed-9f72f155bf48" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/values-v11/themes.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/android_support_v4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/com/lutours/tuwen/BuildConfig.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/com/lutours/tuwen/Manifest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/com/lutours/tuwen/R.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lutours/tuwen/view/DrawingView.java" afterPath="$PROJECT_DIR$/src/com/lutours/tuwen/view/DrawingView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lutours/tuwen/view/MainActivity.java" afterPath="$PROJECT_DIR$/src/com/lutours/tuwen/view/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/ask_frag.xml" afterPath="$PROJECT_DIR$/res/layout/ask_frag.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project.properties" afterPath="$PROJECT_DIR$/project.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tuwen.iml" afterPath="$PROJECT_DIR$/tuwen.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/lutours/tuwen/view/CuttableImageView.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tuwen.iws" />
@@ -118,13 +107,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainActivity.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="61" selection-start="1469" selection-end="1469" vertical-scroll-proportion="1.1441648" vertical-offset="100" max-vertical-offset="780">
+            <state line="40" column="61" selection-start="1469" selection-end="1469" vertical-scroll-proportion="0.0" vertical-offset="100" max-vertical-offset="780">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CuttableImageView.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/CuttableImageView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="8" selection-start="829" selection-end="829" vertical-scroll-proportion="0.44622424" vertical-offset="0" max-vertical-offset="2430">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -155,6 +153,7 @@
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/res/values-v11/themes.xml" />
         <option value="$PROJECT_DIR$/src/com/lutours/tuwen/view/MainActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/lutours/tuwen/view/CuttableImageView.java" />
       </list>
     </option>
   </component>
@@ -243,6 +242,24 @@
               <option name="myItemId" value="tuwen" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tuwen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tuwen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -277,6 +294,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/com/lutours/tuwen/view" />
       <recent name="$PROJECT_DIR$/res/anim" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
@@ -468,7 +486,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="824" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -487,7 +505,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25035766" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25035766" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32719547" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -551,7 +569,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/AskFrag.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="19" selection-start="3338" selection-end="3338" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2310" />
+        <state line="82" column="19" selection-start="3338" selection-end="3338" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2310">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/DrawingView.java">
@@ -579,7 +599,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/MotionMode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="171" selection-end="171" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="255" />
+        <state line="11" column="0" selection-start="171" selection-end="171" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="255">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/ask_frag.xml">
@@ -600,7 +622,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/AskFrag.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="19" selection-start="3338" selection-end="3338" vertical-scroll-proportion="0.0" vertical-offset="1230" max-vertical-offset="2310" />
+        <state line="82" column="19" selection-start="3338" selection-end="3338" vertical-scroll-proportion="0.0" vertical-offset="1230" max-vertical-offset="2310">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/DrawingView.java">
@@ -628,7 +652,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/MotionMode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="171" selection-end="171" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="255" />
+        <state line="11" column="0" selection-start="171" selection-end="171" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="255">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/ask_frag.xml">
@@ -649,7 +675,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/AskFrag.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="5" selection-start="1163" selection-end="1163" vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="765" />
+        <state line="36" column="5" selection-start="1163" selection-end="1163" vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="765">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/ask_frag.xml">
@@ -669,32 +697,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/AskFrag.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="1" selection-start="1466" selection-end="1466" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585" />
+        <state line="45" column="1" selection-start="1466" selection-end="1466" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/AskFrag.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="31" selection-start="31" selection-end="31" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585" />
+        <state line="0" column="31" selection-start="31" selection-end="31" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/AskFrag.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="31" selection-start="31" selection-end="31" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585" />
+        <state line="0" column="31" selection-start="31" selection-end="31" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/AskFrag.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="13" selection-start="529" selection-end="529" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="585" />
+        <state line="19" column="13" selection-start="529" selection-end="529" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="585">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/AskFrag.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="13" selection-start="529" selection-end="529" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="585" />
+        <state line="19" column="13" selection-start="529" selection-end="529" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="585">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/AskFrag.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="19" selection-start="3338" selection-end="3338" vertical-scroll-proportion="0.0" vertical-offset="555" max-vertical-offset="1965" />
+        <state line="82" column="19" selection-start="3338" selection-end="3338" vertical-scroll-proportion="0.0" vertical-offset="555" max-vertical-offset="1965">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/DrawingView.java">
@@ -706,7 +746,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/MotionMode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="171" selection-end="171" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255" />
+        <state line="11" column="0" selection-start="171" selection-end="171" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/ask_dialog.xml">
@@ -798,10 +840,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="61" selection-start="1469" selection-end="1469" vertical-scroll-proportion="1.1441648" vertical-offset="100" max-vertical-offset="780">
+        <state line="40" column="61" selection-start="1469" selection-end="1469" vertical-scroll-proportion="0.0" vertical-offset="100" max-vertical-offset="780">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/CuttableImageView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="8" selection-start="829" selection-end="829" vertical-scroll-proportion="0.44622424" vertical-offset="0" max-vertical-offset="2430">
+          <folding />
         </state>
       </provider>
     </entry>
