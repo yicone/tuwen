@@ -20,8 +20,7 @@ public class CuttableImageView extends ImageView {
 	private Paint mFramePaint, mMaskRect;
 
 	private void init() {
-		mFrameWidth = DeviceUtil.getScreenSize(getResources().getDisplayMetrics())[0]
-				- DeviceUtil.getPixelFromDip(getContext(), 10f);
+		mFrameWidth = (int)Dimension.dipToPixels(getContext(), Dimension.create(getContext()).getWidth() - 10);
 		mFrameHeight = Math.round(mFrameWidth * 0.618f);
 		
 		mFramePaint = new Paint();
