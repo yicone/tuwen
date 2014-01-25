@@ -3,39 +3,14 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-    <com.lutours.tuwen.view.DrawingView android:id="@+id/ivPhoto" android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical">
+    <com.lutours.tuwen.view.DrawingView android:id="@+id/dvCanvas" android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:scaleType="fitXY"
                                         android:src="@drawable/photo"
                                         android:focusable="true"
                                         android:focusableInTouchMode="true"
                                         android:clickable="true"/>
-
-
-    <!--<Button android:id="@+id/btnTestAnim" android:layout_width="wrap_content" android:layout_height="40dp"-->
-    <!--android:text="Test Anim"/>-->
-
-    <RelativeLayout android:id="@+id/bottom_bar"
-                    android:layout_width="match_parent" android:layout_height="40dp"
-                    android:orientation="horizontal"
-                    android:background="#FFFFFF"
-                    android:alpha="0.8"
-                    android:layout_alignParentBottom="true">
-        <ImageButton android:id="@+id/camera" android:layout_width="wrap_content" android:layout_height="match_parent"
-                     android:layout_marginLeft="10dp"
-                     android:src="@drawable/camera_icon"
-                     android:background="#FFFFFF"/>
-
-        <Button android:id="@+id/btnAnswer" android:layout_width="80dp" android:layout_height="match_parent"
-                android:layout_alignParentRight="true"
-                android:background="#FFFFFF"
-                android:alpha="1.0"
-                android:gravity="center"
-                android:text="提问"
-                android:textSize="18dp"
-                android:textColor="#000000"/>
-
-    </RelativeLayout>
 
 </RelativeLayout>

@@ -1,16 +1,12 @@
 package com.lutours.tuwen.view;
 
-import android.widget.ImageView;
 import android.content.Context;
-import android.graphics.Canvas;
-import android.graphics.Color;
-import android.graphics.Paint;
-import android.graphics.Path;
-import android.graphics.RectF;
+import android.graphics.*;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.ImageView;
 
 /**
  * The main view for the drawing canvas!
@@ -156,6 +152,14 @@ public class DrawingView extends ImageView {
 
         // Repaints the entire view.
         invalidate();
+    }
+
+    @Override
+    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+
+        int min = Math.min(getMeasuredWidth(), getMeasuredHeight());
+        setMeasuredDimension(min, min);
     }
 
     @Override

@@ -5,10 +5,8 @@ import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
-import android.graphics.Point;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.Display;
@@ -16,52 +14,64 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.view.animation.TranslateAnimation;
 import android.view.inputmethod.InputMethodManager;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
+import com.actionbarsherlock.app.ActionBar;
+import com.actionbarsherlock.app.SherlockFragment;
 import com.lutours.tuwen.R;
 
 /**
  * Created by xdzheng on 14-1-16.
  */
-public class AskFrag extends Fragment {
+public class AskFrag extends SherlockFragment implements View.OnClickListener {
     private static final int CAMERA_REQUEST = 1888;
     private View rootView;
 
-    private ImageView ivPhoto;
-    private Button btnAnswer;
+    private ImageView dvCanvas;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         rootView = inflater.inflate(R.layout.ask_frag, container, false);
 
-        ivPhoto = (ImageView) rootView.findViewById(R.id.ivPhoto);
-        btnAnswer = (Button) rootView.findViewById(R.id.btnAnswer);
+        dvCanvas = (ImageView) rootView.findViewById(R.id.dvCanvas);
 
-        ivPhoto.setOnFocusChangeListener(new View.OnFocusChangeListener() {
-            @Override
-            public void onFocusChange(View v, boolean hasFocus) {
-                Log.v("ivPhoto", "ivPhoto hasFocus: " + hasFocus);
-            }
-        });
+        ActionBar actionBar = getSherlockActivity().getSupportActionBar();
+        // actionBar.setDisplayShowTitleEnabled(false);
+        //actionBar.setIcon(R.drawable.avatar);            // just set logo
+        // actionBar.setDisplayShowHomeEnabled(false);       // show or hide home button. when hide, can't show "<" icon with anyway.
+        //actionBar.setHomeButtonEnabled(true);         // only let home button was clickable
+        //actionBar.setDisplayHomeAsUpEnabled(false);    // add "<" icon and let home button was clickable
+        // actionBar.setDisplayShowCustomEnabled(true);
+        actionBar.setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+        actionBar.setCustomView(R.layout.action_bar);
+        View actionBarView = actionBar.getCustomView();
+        View btnBack = actionBarView.findViewById(R.id.back_button);
+        btnBack.setOnClickListener(this);
+        View btnNext = actionBarView.findViewById(R.id.next_button);
+        btnNext.setOnClickListener(this);
 
-        View camera = rootView.findViewById(R.id.camera);
-        camera.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        return rootView;
+    }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode == CAMERA_REQUEST && resultCode == Activity.RESULT_OK) {
+            Bitmap photo = (Bitmap) data.getExtras().get("data");
+            dvCanvas.setImageDrawable(new BitmapDrawable(getResources(), photo));
+        }
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.back_button:
                 // Æô¶¯ÅÄÕÕ
                 Intent cameraIntent = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
                 startActivityForResult(cameraIntent, CAMERA_REQUEST);
-            }
-        });
-
-        btnAnswer.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+                break;
+            case R.id.next_button:
                 Dialog dialog = new Dialog(getActivity());
                 dialog.setContentView(R.layout.ask_dialog);
                 Display display = getActivity().getWindowManager().getDefaultDisplay();
@@ -69,9 +79,9 @@ public class AskFrag extends Fragment {
                 display.getMetrics(dm);
                 dialog.getWindow().setLayout(dm.widthPixels, dm.heightPixels / 2);  //Controlling width and height
 
-                ImageView ivPhotoPreview = (ImageView) dialog.findViewById(R.id.ivPhotoPreview);
+                ImageView ivCanvasPreview = (ImageView) dialog.findViewById(R.id.ivPhotoPreview);
                 // TODO Ëõ·Å
-                ivPhotoPreview.setImageDrawable(ivPhoto.getDrawable());
+                ivCanvasPreview.setImageDrawable(dvCanvas.getDrawable());
 
                 final View question_container = dialog.findViewById(R.id.question_container);
                 final EditText etQuestion = (EditText) dialog.findViewById(R.id.question);
@@ -133,17 +143,7 @@ public class AskFrag extends Fragment {
                 });
                 dialog.show();
                 etQuestion.requestFocus();
-            }
-        });
-
-        return rootView;
-    }
-
-    @Override
-    public void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if (requestCode == CAMERA_REQUEST && resultCode == Activity.RESULT_OK) {
-            Bitmap photo = (Bitmap) data.getExtras().get("data");
-            ivPhoto.setImageDrawable(new BitmapDrawable(getResources(), photo));
+                break;
         }
     }
 }

@@ -12,7 +12,7 @@
             >
         <activity android:name=".view.MainActivity"
                   android:label="@string/app_name"
-                  android:theme="@style/Theme.QueryTheme">
+                  android:theme="@style/Theme.MyFancyTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>

@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../android-support-v7-appcompat/android-support-v7-appcompat.iml" filepath="$PROJECT_DIR$/../android-support-v7-appcompat/android-support-v7-appcompat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ActionBarSherlock/actionbarsherlock/actionbarsherlock.iml" filepath="$PROJECT_DIR$/../ActionBarSherlock/actionbarsherlock/actionbarsherlock.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ActionBarSherlock/actionbarsherlock-samples/demos/demos.iml" filepath="$PROJECT_DIR$/../ActionBarSherlock/actionbarsherlock-samples/demos/demos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ActionBarSherlock/actionbarsherlock-samples/styled/styled.iml" filepath="$PROJECT_DIR$/../ActionBarSherlock/actionbarsherlock-samples/styled/styled.iml" />
       <module fileurl="file://$PROJECT_DIR$/tuwen.iml" filepath="$PROJECT_DIR$/tuwen.iml" />
     </modules>
   </component>

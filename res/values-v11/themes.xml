@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Theme.QueryTheme" parent="@style/Theme.AppCompat">
-        <!-- Any customizations for your app running on devices with Theme.Holo here -->
+    <style name="Theme.MyFancyTheme" parent="android:Theme.Holo">
+        <item name="android:homeAsUpIndicator">@drawable/avatar</item>
     </style>
 </resources>
