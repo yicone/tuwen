@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#FFFFFF">
+    <LinearLayout android:id="@+id/question_container" android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+        <ImageView android:id="@+id/ivPhoto" android:layout_width="100dp" android:layout_height="100dp"
+                   android:layout_margin="10dp"/>
+        <EditText android:id="@+id/etQuestion" android:layout_width="0dp" android:layout_height="match_parent"
+                  android:layout_weight="1.0"
+                  android:text="ActionBar Sherlock - Backgroundimage in Actionbar I would love to set a Backgroundimage to the ActionBar which I imported with the ActionBar Sherlock library. However I can't find any link on the internet on how to distinctively set an BackgroundImage with XML. Does anybody here have a hint which he could give me"
+                  android:textColor="#000"/>
+    </LinearLayout>
+</LinearLayout>

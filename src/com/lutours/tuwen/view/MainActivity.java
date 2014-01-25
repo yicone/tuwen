@@ -18,7 +18,7 @@ public class MainActivity extends SherlockFragmentActivity {
         setContentView(R.layout.main);
 
 
-        Fragment askFrag = new AskFrag();
+        Fragment askFrag = new DrawingFragment();
         FragmentManager fragmentManager = this.getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.add(R.id.frag_container, askFrag);
