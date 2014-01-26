@@ -32,7 +32,15 @@ public class CameraFragment extends Fragment implements View.OnClickListener, Su
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 		View rootView = inflater.inflate(R.layout.camera_frag, container, false);
 
+
+		ImageView ivClose = (ImageView) rootView.findViewById(R.id.ivClose);
+		ImageView ivReverse = (ImageView) rootView.findViewById(R.id.ivReverse);
+		ImageView ivLight = (ImageView) rootView.findViewById(R.id.ivLight);
 		ImageView ivCamera = (ImageView) rootView.findViewById(R.id.ivCamera);
+
+		ivClose.setOnClickListener(this);
+		ivReverse.setOnClickListener(this);
+		ivLight.setOnClickListener(this);
 		ivCamera.setOnClickListener(this);
 
 		surfaceView = (SurfaceView)rootView.findViewById(R.id.svPreview);
@@ -48,6 +56,9 @@ public class CameraFragment extends Fragment implements View.OnClickListener, Su
 		int id = v.getId();
 		switch (id) {
 			case R.id.ivClose:
+				camera.stopPreview();
+				// 将自己出栈
+				getFragmentManager().popBackStackImmediate();
 				break;
 			case R.id.ivReverse:
 				break;
