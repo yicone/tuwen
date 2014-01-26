@@ -20,7 +20,7 @@ public class AnswerFragment extends SherlockFragment implements View.OnClickList
 
         ActionBar actionBar = getSherlockActivity().getSupportActionBar();
         actionBar.setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
-        actionBar.setCustomView(R.layout.action_bar);
+        actionBar.setCustomView(R.layout.camera_action_bar);
         View actionBarView = actionBar.getCustomView();
         View btnBack = actionBarView.findViewById(R.id.back_button);
         btnBack.setOnClickListener(this);

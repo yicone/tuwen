@@ -3,11 +3,13 @@ package com.lutours.tuwen.view;
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
+import android.view.SurfaceView;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -20,23 +22,42 @@ import com.lutours.tuwen.R;
  */
 public class DrawingFragment extends SherlockFragment implements View.OnClickListener {
     private static final int CAMERA_REQUEST = 1888;
+    private static final String KEY_BITMAP_DATA = "KEY_BITMAP_DATA";
     private View rootView;
 
     private ImageView dvCanvas;
+    private byte[] mBitmapData;
+
+    public static DrawingFragment create(byte[] bitmapData) {
+        DrawingFragment fragment = new DrawingFragment();
+        Bundle args = new Bundle();
+        args.putByteArray(KEY_BITMAP_DATA, bitmapData);
+        fragment.setArguments(args);
+        return fragment;
+    }
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        Bundle args = this.getArguments();
+        mBitmapData = args.getByteArray(KEY_BITMAP_DATA);
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         rootView = inflater.inflate(R.layout.drawing_frag, container, false);
 
         dvCanvas = (ImageView) rootView.findViewById(R.id.dvCanvas);
+        Bitmap bitmap = BitmapFactory.decodeByteArray(mBitmapData, 0, mBitmapData.length);
+        dvCanvas.setImageBitmap(bitmap);
 
         ActionBar actionBar = getSherlockActivity().getSupportActionBar();
-        actionBar.setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
-        actionBar.setCustomView(R.layout.action_bar);
+        actionBar.setCustomView(R.layout.drawing_action_bar);
+
         View actionBarView = actionBar.getCustomView();
         View btnBack = actionBarView.findViewById(R.id.back_button);
-        btnBack.setOnClickListener(this);
         View btnNext = actionBarView.findViewById(R.id.next_button);
+        btnBack.setOnClickListener(this);
         btnNext.setOnClickListener(this);
 
         return rootView;
@@ -55,8 +76,11 @@ public class DrawingFragment extends SherlockFragment implements View.OnClickLis
         switch (v.getId()) {
             case R.id.back_button:
                 // ∆Ù∂Ø≈ƒ’’
-                Intent cameraIntent = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
-                startActivityForResult(cameraIntent, CAMERA_REQUEST);
+//                Intent cameraIntent = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
+//                startActivityForResult(cameraIntent, CAMERA_REQUEST);
+                SurfaceView svPreview = (SurfaceView) getTargetFragment().getView().findViewById(R.id.svPreview);
+                svPreview.change
+                getFragmentManager().beginTransaction().remove(DrawingFragment.this).commit();
                 break;
             case R.id.next_button:
                 AnswerFragment frag = new AnswerFragment();
