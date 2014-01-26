@@ -14,12 +14,7 @@
     <option name="TOOL_WINDOW_LOG_LEVEL" value="ERROR" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30888139-0cb0-4788-aaed-9f72f155bf48" name="Default" comment=".gitignore&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/lutours/tuwen/view/AnswerFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/answer_frag.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/res/layout/ask_frag.xml" afterPath="$PROJECT_DIR$/res/layout/drawing_frag.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/lutours/tuwen/view/AskFrag.java" afterPath="$PROJECT_DIR$/src/com/lutours/tuwen/view/DrawingFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lutours/tuwen/view/MainActivity.java" afterPath="$PROJECT_DIR$/src/com/lutours/tuwen/view/MainActivity.java" />
+    <list default="true" id="30888139-0cb0-4788-aaed-9f72f155bf48" name="Default" comment="提问页">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tuwen.iws" />
@@ -126,8 +121,10 @@
       <file leaf-file-name="DrawingFragment.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/DrawingFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="62" selection-start="2671" selection-end="2972" vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="2010">
-              <folding />
+            <state line="65" column="62" selection-start="2347" selection-end="2648" vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="2010">
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -135,7 +132,7 @@
       <file leaf-file-name="AnswerFragment.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/AnswerFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="5" selection-start="1675" selection-end="1675" vertical-scroll-proportion="0.9737249" vertical-offset="0" max-vertical-offset="735">
+            <state line="20" column="74" selection-start="776" selection-end="776" vertical-scroll-proportion="0.3477589" vertical-offset="75" max-vertical-offset="735">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -634,7 +631,11 @@
       <created>1390671441866</created>
       <updated>1390671441866</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="提问页">
+      <created>1390673988383</created>
+      <updated>1390673988383</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -682,7 +683,8 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="1. ActionBar&#10;2. 方形 DrawingView&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="1. ActionBar&#10;2. 方形 DrawingView&#10;" />
+    <MESSAGE value="提问页" />
+    <option name="LAST_COMMIT_MESSAGE" value="提问页" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1092,14 +1094,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/DrawingFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="62" selection-start="2671" selection-end="2972" vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="2010">
-          <folding />
+        <state line="65" column="62" selection-start="2347" selection-end="2648" vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="2010">
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/AnswerFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="5" selection-start="1675" selection-end="1675" vertical-scroll-proportion="0.9737249" vertical-offset="0" max-vertical-offset="735">
+        <state line="20" column="74" selection-start="776" selection-end="776" vertical-scroll-proportion="0.3477589" vertical-offset="75" max-vertical-offset="735">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
