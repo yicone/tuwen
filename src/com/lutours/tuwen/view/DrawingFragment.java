@@ -6,6 +6,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
@@ -17,19 +18,21 @@ import com.actionbarsherlock.app.ActionBar;
 import com.actionbarsherlock.app.SherlockFragment;
 import com.lutours.tuwen.R;
 
+import java.io.ByteArrayOutputStream;
+
 /**
  * Created by xdzheng on 14-1-16.
  */
-public class DrawingFragment extends SherlockFragment implements View.OnClickListener {
-    private static final int CAMERA_REQUEST = 1888;
-    private static final String KEY_BITMAP_DATA = "KEY_BITMAP_DATA";
-    private View rootView;
+public class DrawingFragment extends Fragment implements View.OnClickListener {
+	private static final int CAMERA_REQUEST = 1888;
+	private static final String KEY_BITMAP_DATA = "KEY_BITMAP_DATA";
+	private View rootView;
 
-    private ImageView dvCanvas;
-    private byte[] mBitmapData;
+	private DrawingView dvCanvas;
+	private byte[] mBitmapData;
 
-    public static DrawingFragment create(byte[] bitmapData) {
-        DrawingFragment fragment = new DrawingFragment();
+	public static DrawingFragment create(byte[] bitmapData) {
+		DrawingFragment fragment = new DrawingFragment();
         Bundle args = new Bundle();
         args.putByteArray(KEY_BITMAP_DATA, bitmapData);
         fragment.setArguments(args);
@@ -47,48 +50,52 @@ public class DrawingFragment extends SherlockFragment implements View.OnClickLis
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         rootView = inflater.inflate(R.layout.drawing_frag, container, false);
 
-        dvCanvas = (ImageView) rootView.findViewById(R.id.dvCanvas);
+        dvCanvas = (DrawingView) rootView.findViewById(R.id.dvCanvas);
         Bitmap bitmap = BitmapFactory.decodeByteArray(mBitmapData, 0, mBitmapData.length);
         dvCanvas.setImageBitmap(bitmap);
+	    dvCanvas.setDrawingCacheEnabled(true);
 
-        ActionBar actionBar = getSherlockActivity().getSupportActionBar();
-        actionBar.setCustomView(R.layout.drawing_action_bar);
+//        ActionBar actionBar = getSherlockActivity().getSupportActionBar();
+//        actionBar.setCustomView(R.layout.drawing_action_bar);
+//        View actionBarView = actionBar.getCustomView();
+	    View btnBack = rootView.findViewById(R.id.back_button);
+	    View btnNext = rootView.findViewById(R.id.next_button);
+	    btnBack.setOnClickListener(this);
+	    btnNext.setOnClickListener(this);
 
-        View actionBarView = actionBar.getCustomView();
-        View btnBack = actionBarView.findViewById(R.id.back_button);
-        View btnNext = actionBarView.findViewById(R.id.next_button);
-        btnBack.setOnClickListener(this);
-        btnNext.setOnClickListener(this);
-
-        return rootView;
-    }
-
-    @Override
-    public void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if (requestCode == CAMERA_REQUEST && resultCode == Activity.RESULT_OK) {
-            Bitmap photo = (Bitmap) data.getExtras().get("data");
-            dvCanvas.setImageDrawable(new BitmapDrawable(getResources(), photo));
-        }
+	    return rootView;
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.back_button:
-                // ∆Ù∂Ø≈ƒ’’
-//                Intent cameraIntent = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
-//                startActivityForResult(cameraIntent, CAMERA_REQUEST);
-                SurfaceView svPreview = (SurfaceView) getTargetFragment().getView().findViewById(R.id.svPreview);
-                svPreview.change
-                getFragmentManager().beginTransaction().remove(DrawingFragment.this).commit();
-                break;
-            case R.id.next_button:
-                AnswerFragment frag = new AnswerFragment();
-                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
-                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.add(R.id.frag_container, frag);
-                fragmentTransaction.commitAllowingStateLoss();
+	        case R.id.back_button: {
+		        // ªÿµΩ≈ƒ’’“≥
+		        FragmentManager fm = getFragmentManager();
+		        fm.popBackStack();
 
+		        FragmentTransaction ft = fm.beginTransaction();
+		        ft.remove(DrawingFragment.this);
+		        ft.commit();
+		        break;
+	        }
+	        case R.id.next_button: {
+
+		        FragmentManager fm = getFragmentManager();
+		        FragmentTransaction ft = fm.beginTransaction();
+
+		        // get bytes
+		        Bitmap bmp = dvCanvas.getDrawingCache();
+		        ByteArrayOutputStream stream = new ByteArrayOutputStream();
+		        bmp.compress(Bitmap.CompressFormat.JPEG, 100, stream);
+		        byte[] byteArray = stream.toByteArray();
+
+		        AnswerFragment frag = AnswerFragment.create(byteArray);
+		        ft.replace(android.R.id.content, frag);
+		        ft.addToBackStack(null);
+		        ft.commit();
+		        break;
+	        }
 //                Dialog dialog = new Dialog(getActivity());
 //                dialog.setContentView(R.layout.ask_dialog);
 //                Display display = getActivity().getWindowManager().getDefaultDisplay();
@@ -160,7 +167,6 @@ public class DrawingFragment extends SherlockFragment implements View.OnClickLis
 //                });
 //                dialog.show();
 //                etQuestion.requestFocus();
-                break;
         }
     }
 }
