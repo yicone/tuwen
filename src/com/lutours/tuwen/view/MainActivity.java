@@ -1,38 +1,48 @@
 package com.lutours.tuwen.view;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.*;
 import android.widget.TabHost;
 import com.lutours.tuwen.R;
 
+import java.util.Stack;
+
 public class MainActivity extends FragmentActivity {
 
-	private FragmentTabHost mTabHost = null;
+	private MyFragmentTabHost mTabHost = null;
 
 	@Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        // setContentView(new DrawingView(this, null));
         setContentView(R.layout.main);
 
-		mTabHost = (FragmentTabHost) findViewById(android.R.id.tabhost);
-		mTabHost.setup(this, getSupportFragmentManager(), R.id.frag_container);
+		mTabHost = (MyFragmentTabHost) findViewById(android.R.id.tabhost);
+		mTabHost.setup(this, getSupportFragmentManager(), R.id.tabFrameLayout);
 
 		TabHost.TabSpec tabSpec = mTabHost.newTabSpec("home");
-		tabSpec.setIndicator("list", getApplicationContext().getResources().getDrawable(R.drawable.camera_icon));
+		tabSpec.setIndicator("list", getResources().getDrawable(android.R.drawable.star_on));
+		mTabHost.addTab(tabSpec, QuestionListFragment.class, null);
+
+		tabSpec = mTabHost.newTabSpec("home");
+		tabSpec.setIndicator("", getResources().getDrawable(R.drawable.camera_icon));
 		mTabHost.addTab(tabSpec, QuestionListFragment.class, null);
 
 		tabSpec = mTabHost.newTabSpec("camera");
-		tabSpec.setIndicator("camera", getApplicationContext().getResources().getDrawable(R.drawable.camera_icon));
+		tabSpec.setIndicator("", getResources().getDrawable(R.drawable.camera_icon));
 		mTabHost.addTab(tabSpec, CameraFragment.class, null);
 
-//        ActionBar actionBar = getSupportActionBar();
-//        actionBar.setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+	}
 
-		Fragment askFrag = new QuestionListFragment();
-        FragmentManager fragmentManager = this.getSupportFragmentManager();
-		FragmentTransaction ft = fragmentManager.beginTransaction();
-		ft.add(android.R.id.content, askFrag);
-		ft.commitAllowingStateLoss();
+	@Override
+	public void onBackPressed() {
+		Fragment f = getSupportFragmentManager()
+				.findFragmentByTag(mTabHost.getCurrentTabTag());
+		if (f.getChildFragmentManager() == null || f.getChildFragmentManager().getBackStackEntryCount() == 0) {
+			if (mTabHost.onBackPressed()) {
+				return;
+			}
+		}
+		super.onBackPressed();
 	}
 }

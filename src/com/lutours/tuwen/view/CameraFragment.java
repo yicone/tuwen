@@ -7,8 +7,6 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.view.*;
 import android.widget.ImageView;
-import com.actionbarsherlock.app.ActionBar;
-import com.actionbarsherlock.app.SherlockFragment;
 import com.lutours.tuwen.R;
 
 import java.io.IOException;
@@ -27,7 +25,7 @@ public class CameraFragment extends Fragment implements View.OnClickListener, Su
             camera.stopPreview();
 
             // goto DrawingFragment
-	        FragmentManager fm = getFragmentManager();
+	        FragmentManager fm = getChildFragmentManager();
 	        FragmentTransaction ft = fm.beginTransaction();
 	        Fragment fragment = DrawingFragment.create(data);
 	        ft.replace(android.R.id.content, fragment).addToBackStack(null).commit();
