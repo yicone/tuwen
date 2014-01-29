@@ -25,10 +25,10 @@ public class CameraFragment extends Fragment implements View.OnClickListener, Su
             camera.stopPreview();
 
             // goto DrawingFragment
-	        FragmentManager fm = getChildFragmentManager();
+	        FragmentManager fm = getFragmentManager();
 	        FragmentTransaction ft = fm.beginTransaction();
 	        Fragment fragment = DrawingFragment.create(data);
-	        ft.replace(android.R.id.content, fragment).addToBackStack(null).commit();
+	        ft.replace(R.id.tabFrameLayout, fragment).addToBackStack(null).commit();
         }
     };
 
