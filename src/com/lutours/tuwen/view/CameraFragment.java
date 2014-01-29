@@ -28,7 +28,7 @@ public class CameraFragment extends Fragment implements View.OnClickListener, Su
 	        FragmentManager fm = getFragmentManager();
 	        FragmentTransaction ft = fm.beginTransaction();
 	        Fragment fragment = DrawingFragment.create(data);
-	        ft.replace(R.id.tabFrameLayout, fragment).addToBackStack(null).commit();
+	        ft.replace(android.R.id.content, fragment).addToBackStack(null).commit();
         }
     };
 

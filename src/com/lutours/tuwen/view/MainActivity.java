@@ -38,7 +38,7 @@ public class MainActivity extends FragmentActivity {
 	public void onBackPressed() {
 		Fragment f = getSupportFragmentManager()
 				.findFragmentByTag(mTabHost.getCurrentTabTag());
-		if (f.getChildFragmentManager() == null || f.getChildFragmentManager().getBackStackEntryCount() == 0) {
+		if (f.getFragmentManager() == null || f.getFragmentManager().getBackStackEntryCount() == 0) {
 			if (mTabHost.onBackPressed()) {
 				return;
 			}
