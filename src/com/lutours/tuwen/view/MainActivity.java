@@ -3,6 +3,7 @@ package com.lutours.tuwen.view;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.*;
+import android.view.View;
 import android.widget.TabHost;
 import com.lutours.tuwen.R;
 
@@ -19,6 +20,12 @@ public class MainActivity extends FragmentActivity {
 
 		mTabHost = (MyFragmentTabHost) findViewById(android.R.id.tabhost);
 		mTabHost.setup(this, getSupportFragmentManager(), R.id.tabFrameLayout);
+		mTabHost.setOnTabChangedListener(new TabHost.OnTabChangeListener() {
+			@Override
+			public void onTabChanged(String tabId) {
+				mTabHost.setVisibility((tabId == "camera") ? View.GONE : View.VISIBLE);
+			}
+		});
 
 		TabHost.TabSpec tabSpec = mTabHost.newTabSpec("home");
 		tabSpec.setIndicator("list", getResources().getDrawable(android.R.drawable.star_on));
