@@ -1,39 +1,48 @@
 package com.lutours.tuwen.view;
 
-import android.app.Activity;
+import android.graphics.Color;
 import android.hardware.Camera;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
-import android.view.*;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.view.ViewTreeObserver;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import com.lutours.tuwen.R;
-
-import java.io.IOException;
 
 /**
  * Created by xdzheng on 14-1-26.
  */
-public class CameraFragment extends Fragment implements View.OnClickListener, SurfaceHolder.Callback {
-	private Camera mCamera;
-	private SurfaceView surfaceView;
-	private SurfaceHolder surfaceHolder;
-	private boolean previewing = false;
-	private Camera.PictureCallback mPictureCallback = new Camera.PictureCallback() {
+public class CameraFragment extends Fragment implements View.OnClickListener {
+    private CameraPreview mPreview;
+
+    private Camera.PictureCallback mPictureCallback = new Camera.PictureCallback() {
         @Override
         public void onPictureTaken(byte[] data, Camera camera) {
-            camera.stopPreview();
 
             // goto DrawingFragment
-	        FragmentManager fm = getFragmentManager();
-	        FragmentTransaction ft = fm.beginTransaction();
-	        Fragment fragment = DrawingFragment.create(data);
-	        ft.replace(android.R.id.content, fragment).addToBackStack(null).commit();
+            final FragmentManager fm = getFragmentManager();
+            FragmentTransaction ft = fm.beginTransaction();
+            Fragment fragment = DrawingFragment.create(data);
+            ft.replace(android.R.id.content, fragment).addToBackStack(null).commit();
+            fm.addOnBackStackChangedListener(new FragmentManager.OnBackStackChangedListener() {
+                @Override
+                public void onBackStackChanged() {
+                    if (fm.getBackStackEntryCount() == 0) {
+                        mPreview.startCamera();
+                    }
+                }
+            });
         }
     };
 
-	@Override
+    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.camera_frag, container, false);
 
@@ -43,95 +52,100 @@ public class CameraFragment extends Fragment implements View.OnClickListener, Su
 //	    ActionBar actionBar = getSherlockActivity().getSupportActionBar();
 //	    actionBar.setCustomView(R.layout.camera_action_bar);
 //	    View abView = actionBar.getCustomView();
-		ImageView ivClose = (ImageView) rootView.findViewById(R.id.ivClose);
-		ImageView ivReverse = (ImageView) rootView.findViewById(R.id.ivReverse);
-		ImageView ivLight = (ImageView) rootView.findViewById(R.id.ivLight);
-		ivClose.setOnClickListener(this);
-		ivReverse.setOnClickListener(this);
-		ivLight.setOnClickListener(this);
+        ImageView ivClose = (ImageView) rootView.findViewById(R.id.ivClose);
+        ImageView ivReverse = (ImageView) rootView.findViewById(R.id.ivReverse);
+        ImageView ivLight = (ImageView) rootView.findViewById(R.id.ivLight);
+        ivClose.setOnClickListener(this);
+        ivReverse.setOnClickListener(this);
+        ivLight.setOnClickListener(this);
 
-		surfaceView = (SurfaceView) rootView.findViewById(R.id.svPreview);
-		surfaceHolder = surfaceView.getHolder();
-		surfaceHolder.addCallback(this);
-        surfaceHolder.setType(SurfaceHolder.SURFACE_TYPE_PUSH_BUFFERS);
+
+        // 修复部分相机镜头旋转的问题
+
+
+        mPreview = new CameraPreview(getActivity());
+//        if (minPreviewSize != null) {
+//            mPreview.setLayoutParams(new LinearLayout.LayoutParams(minPreviewSize.width, minPreviewSize.height));
+//        } else {
+//            mPreview.setLayoutParams(new LinearLayout.LayoutParams(min, min));
+//        }
+
+        final SquareMaskLayout previewContainer = (SquareMaskLayout) rootView.findViewById(R.id.camera_preview);
+        mPreview.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
+        mPreview.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
+            @Override
+            public void onGlobalLayout() {
+                mPreview.getViewTreeObserver().removeGlobalOnLayoutListener(this);
+
+                int w = mPreview.getWidth();
+                int h = mPreview.getHeight();
+
+                int delta = h - w;
+
+                RelativeLayout maskContainer = new RelativeLayout(getActivity());
+                FrameLayout.LayoutParams layoutParams = new FrameLayout.LayoutParams(FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.MATCH_PARENT);
+
+                LinearLayout maskLayout;
+                RelativeLayout.LayoutParams relativeLayoutParams;
+
+                maskLayout = new LinearLayout(getActivity());
+                maskLayout.setBackgroundColor(Color.BLACK);
+                maskLayout.setAlpha(0.8f);
+                relativeLayoutParams = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT, delta / 2);
+                relativeLayoutParams.addRule(RelativeLayout.ALIGN_PARENT_TOP);
+                maskLayout.setLayoutParams(relativeLayoutParams);
+                maskContainer.addView(maskLayout);
+
+                maskLayout = new LinearLayout(getActivity());
+                maskLayout.setBackgroundColor(Color.BLACK);
+                maskLayout.setAlpha(0.7f);
+                relativeLayoutParams = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT, delta / 2);
+                relativeLayoutParams.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM);
+                maskLayout.setLayoutParams(relativeLayoutParams);
+                maskContainer.addView(maskLayout);
+
+                maskContainer.setLayoutParams(layoutParams);
+                previewContainer.addView(maskContainer);
+            }
+        });
+        previewContainer.addView(mPreview);
 
         return rootView;
     }
 
-	@Override
-	public void onClick(View v) {
-		int id = v.getId();
-		switch (id) {
+    @Override
+    public void onPause() {
+        super.onPause();
+        mPreview.releaseCamera();
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        mPreview.startCamera();
+    }
+
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+    }
+
+    @Override
+    public void onClick(View v) {
+        int id = v.getId();
+        switch (id) {
             case R.id.ivClose:
-                mCamera.stopPreview();
                 // 将自己出栈
-                getFragmentManager().popBackStackImmediate();
+                getActivity().onBackPressed();
                 break;
             case R.id.ivReverse:
                 break;
             case R.id.ivLight:
                 break;
             case R.id.ivCamera:
-                mCamera.takePicture(null, null, mPictureCallback);
+                mPreview.takePicture(mPictureCallback);
                 break;
         }
     }
 
-    @Override
-    public void surfaceChanged(SurfaceHolder holder, int format, int width, int height) {
-        if (previewing) {
-            mCamera.stopPreview();
-            previewing = false;
-        }
-
-        if (mCamera != null) {
-            try {
-                mCamera.setPreviewDisplay(surfaceHolder);
-                mCamera.startPreview();
-                previewing = true;
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
-    }
-
-    @Override
-    public void surfaceCreated(SurfaceHolder holder) {
-        mCamera = Camera.open();
-	    setCameraDisplayOrientation(getActivity(), Camera.CameraInfo.CAMERA_FACING_BACK, mCamera);
-    }
-
-    @Override
-    public void surfaceDestroyed(SurfaceHolder holder) {
-        mCamera.stopPreview();
-        mCamera.release();
-        mCamera = null;
-        previewing = false;
-    }
-
-	// http://stackoverflow.com/questions/4645960/how-to-set-android-camera-orientation-properly
-	public static void setCameraDisplayOrientation(Activity activity,
-	                                               int cameraId, android.hardware.Camera camera) {
-		android.hardware.Camera.CameraInfo info =
-				new android.hardware.Camera.CameraInfo();
-		android.hardware.Camera.getCameraInfo(cameraId, info);
-		int rotation = activity.getWindowManager().getDefaultDisplay()
-				.getRotation();
-		int degrees = 0;
-		switch (rotation) {
-			case Surface.ROTATION_0: degrees = 0; break;
-			case Surface.ROTATION_90: degrees = 90; break;
-			case Surface.ROTATION_180: degrees = 180; break;
-			case Surface.ROTATION_270: degrees = 270; break;
-		}
-
-		int result;
-		if (info.facing == Camera.CameraInfo.CAMERA_FACING_FRONT) {
-			result = (info.orientation + degrees) % 360;
-			result = (360 - result) % 360;  // compensate the mirror
-		} else {  // back-facing
-			result = (info.orientation - degrees + 360) % 360;
-		}
-		camera.setDisplayOrientation(result);
-	}
 }

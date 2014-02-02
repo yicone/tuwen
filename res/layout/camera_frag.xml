@@ -5,7 +5,8 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:background="@color/background_color">
-    <RelativeLayout android:layout_width="match_parent"
+    <RelativeLayout android:id="@+id/action_bar"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@color/main_color"
                     android:paddingLeft="10dp"
@@ -28,15 +29,11 @@
 
     </RelativeLayout>
 
-    <LinearLayout android:layout_width="match_parent" android:layout_height="0dp"
-                  android:layout_weight="1.0"
-                  android:orientation="vertical"
-                  android:gravity="center">
-        <com.lutours.tuwen.view.SquareSurfaceView android:id="@+id/svPreview" android:layout_width="match_parent"
-                                                  android:layout_height="match_parent"
-                />
-    </LinearLayout>
-
+    <com.lutours.tuwen.view.SquareMaskLayout android:id="@+id/camera_preview"
+                 android:layout_width="match_parent" android:layout_height="0dp"
+                 android:layout_weight="1.0"
+                 android:orientation="vertical"
+                 android:gravity="center" />
 
     <LinearLayout android:layout_width="match_parent" android:layout_height="100dp"
                   android:gravity="center"

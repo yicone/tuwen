@@ -3,16 +3,19 @@
           package="com.lutours.tuwen"
           android:versionCode="1"
           android:versionName="1.0">
-    <uses-sdk android:minSdkVersion="11" android:targetSdkVersion="17"/>
+    <uses-sdk android:minSdkVersion="9" android:targetSdkVersion="17"/>
     <!--http://stackoverflow.com/questions/5991319/capture-image-from-camera-and-display-in-activity/5991757#5991757-->
     <uses-feature android:name="android.hardware.camera"></uses-feature>
-    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-feature android:name = "android.hardware.camera.autofocus" />
+
     <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <application android:label="@string/app_name" android:icon="@drawable/ic_launcher"
             >
         <activity android:name=".view.MainActivity"
                   android:label="@string/app_name"
-                  android:theme="@style/Theme.MyFancyTheme">
+                  android:theme="@style/Theme.MyFancyTheme"
+                  android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>

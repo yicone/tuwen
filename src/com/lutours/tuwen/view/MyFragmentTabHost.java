@@ -4,10 +4,7 @@ import android.content.Context;
 import android.support.v4.app.FragmentTabHost;
 import android.util.AttributeSet;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
-import java.util.List;
-import java.util.Stack;
 
 /**
  * Created by xdzheng on 14-1-29.

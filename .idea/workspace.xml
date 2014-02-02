@@ -10,16 +10,24 @@
       <config />
     </shared>
   </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="ERROR" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="30888139-0cb0-4788-aaed-9f72f155bf48" name="Default" comment="提问页">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/camera_action_bar.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/res/layout/action_bar.xml" afterPath="$PROJECT_DIR$/res/layout/drawing_action_bar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lutours/tuwen/view/AnswerFragment.java" afterPath="$PROJECT_DIR$/src/com/lutours/tuwen/view/AnswerFragment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/lutours/tuwen/view/CameraPreview.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/lutours/tuwen/view/SquareMaskLayout.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/android_support_v4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/libs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/lutours/tuwen/view/SquareSurfaceView.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lutours/tuwen/view/CameraFragment.java" afterPath="$PROJECT_DIR$/src/com/lutours/tuwen/view/CameraFragment.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lutours/tuwen/view/DrawingFragment.java" afterPath="$PROJECT_DIR$/src/com/lutours/tuwen/view/DrawingFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lutours/tuwen/view/MainActivity.java" afterPath="$PROJECT_DIR$/src/com/lutours/tuwen/view/MainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lutours/tuwen/view/MyFragmentTabHost.java" afterPath="$PROJECT_DIR$/src/com/lutours/tuwen/view/MyFragmentTabHost.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/camera_frag.xml" afterPath="$PROJECT_DIR$/res/layout/camera_frag.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/drawing_frag.xml" afterPath="$PROJECT_DIR$/res/layout/drawing_frag.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project.properties" afterPath="$PROJECT_DIR$/project.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tuwen.iml" afterPath="$PROJECT_DIR$/tuwen.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tuwen.iws" />
@@ -76,7 +84,7 @@
     </breakpoint_any>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/DrawingFragment.java" line="51" class="com.lutours.tuwen.view.DrawingFragment" package="com.lutours.tuwen.view">
+      <breakpoint url="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/DrawingFragment.java" line="44" class="com.lutours.tuwen.view.DrawingFragment" package="com.lutours.tuwen.view">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -91,7 +99,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/DrawingFragment.java" line="69" class="com.lutours.tuwen.view.DrawingFragment" package="com.lutours.tuwen.view">
+      <breakpoint url="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/DrawingFragment.java" line="62" class="com.lutours.tuwen.view.DrawingFragment" package="com.lutours.tuwen.view">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -106,7 +114,157 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/CameraFragment.java" line="41" class="com.lutours.tuwen.view.CameraFragment" package="com.lutours.tuwen.view">
+      <breakpoint url="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/SquareMaskLayout.java" line="28" class="com.lutours.tuwen.view.SquareMaskLayout" package="com.lutours.tuwen.view">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/CameraPreview.java" line="42" class="com.lutours.tuwen.view.CameraPreview" package="com.lutours.tuwen.view">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/CameraFragment.java" line="117" class="com.lutours.tuwen.view.CameraFragment" package="com.lutours.tuwen.view">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/CameraFragment.java" line="129" class="com.lutours.tuwen.view.CameraFragment" package="com.lutours.tuwen.view">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/CameraPreview.java" line="83" class="com.lutours.tuwen.view.CameraPreview" package="com.lutours.tuwen.view">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/CameraPreview.java" line="88" class="com.lutours.tuwen.view.CameraPreview" package="com.lutours.tuwen.view">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/CameraPreview.java" line="95" class="com.lutours.tuwen.view.CameraPreview" package="com.lutours.tuwen.view">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/CameraPreview.java" line="93" class="com.lutours.tuwen.view.CameraPreview" package="com.lutours.tuwen.view">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/CameraPreview.java" line="120" class="com.lutours.tuwen.view.CameraPreview" package="com.lutours.tuwen.view">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/CameraFragment.java" line="123" class="com.lutours.tuwen.view.CameraFragment" package="com.lutours.tuwen.view">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/CameraFragment.java" line="110" class="com.lutours.tuwen.view.CameraFragment" package="com.lutours.tuwen.view">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -134,30 +292,36 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="51" selection-start="1103" selection-end="1120" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
+            <state line="15" column="13" selection-start="344" selection-end="344" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CameraFragment.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="CameraFragment.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/CameraFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="35" selection-start="2182" selection-end="2193" vertical-scroll-proportion="-0.2244898" vertical-offset="975" max-vertical-offset="1740">
+            <state line="127" column="13" selection-start="5190" selection-end="5190" vertical-scroll-proportion="0.0" vertical-offset="1675" max-vertical-offset="2340">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#708#1212#0" expanded="true" />
-                <element signature="e#1205#1206#0" expanded="true" />
+                <element signature="e#774#1546#0" expanded="true" />
+                <element signature="e#1239#1528#0" expanded="true" />
+                <element signature="e#1513#1514#0" expanded="true" />
+                <element signature="e#1539#1540#0" expanded="true" />
+                <element signature="e#3083#4881#0" expanded="true" />
+                <element signature="e#4870#4871#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DrawingFragment.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/DrawingFragment.java">
+      <file leaf-file-name="CameraPreview.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/CameraPreview.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="5" selection-start="2652" selection-end="2652" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="2340">
-              <folding />
+            <state line="83" column="0" selection-start="2728" selection-end="2728" vertical-scroll-proportion="0.14066496" vertical-offset="1190" max-vertical-offset="3360">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -192,7 +356,6 @@
         <option value="$PROJECT_DIR$/src/com/lutours/tuwen/view/Dimension.java" />
         <option value="$PROJECT_DIR$/src/com/lutours/tuwen/view/CuttableImageView.java" />
         <option value="$PROJECT_DIR$/res/menu/menu.xml" />
-        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/res/values-v11/themes.xml" />
         <option value="$PROJECT_DIR$/../ActionBarSherlock/actionbarsherlock-samples/styled/src/com/actionbarsherlock/sample/styled/MainActivity.java" />
         <option value="$PROJECT_DIR$/res/values/colors.xml" />
@@ -207,17 +370,22 @@
         <option value="$PROJECT_DIR$/res/layout/drawing_frag.xml" />
         <option value="$PROJECT_DIR$/src/com/lutours/tuwen/view/MainActivity.java" />
         <option value="$PROJECT_DIR$/res/layout/camera_action_bar.xml" />
-        <option value="$PROJECT_DIR$/res/layout/camera_frag.xml" />
         <option value="$PROJECT_DIR$/res/layout/drawing_action_bar.xml" />
-        <option value="$PROJECT_DIR$/src/com/lutours/tuwen/view/CameraFragment.java" />
         <option value="$PROJECT_DIR$/src/com/lutours/tuwen/view/DrawingFragment.java" />
+        <option value="$PROJECT_DIR$/src/com/lutours/tuwen/view/MyFragmentTabHost.java" />
+        <option value="$PROJECT_DIR$/res/layout/camera_frag.xml" />
+        <option value="$PROJECT_DIR$/src/com/lutours/tuwen/view/SquareMaskLayout.java" />
+        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/src/com/lutours/tuwen/view/OnBackPressedListener.java" />
+        <option value="$PROJECT_DIR$/src/com/lutours/tuwen/view/CameraPreview.java" />
+        <option value="$PROJECT_DIR$/src/com/lutours/tuwen/view/CameraFragment.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
-    <option name="width" value="1920" />
-    <option name="height" value="1124" />
+    <option name="width" value="1440" />
+    <option name="height" value="824" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -277,10 +445,6 @@
               <option name="myItemId" value="tuwen" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -306,88 +470,36 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="tuwen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tuwen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tuwen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tuwen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="view" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tuwen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tuwen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="values-v11" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tuwen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tuwen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tuwen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tuwen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="menu" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tuwen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tuwen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tuwen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -398,7 +510,7 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ActionBarSherlock/actionbarsherlock-samples/demos" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Software/adt-bundle-mac-x86_64-20130729/sdk/extras/android/support/v4/android-support-v4.jar!/" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -408,10 +520,10 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="192.168.56.101:5555" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="HC358W902858" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="MonoForAndroid_API_10" />
     <property name="LayoutCode.rearrangeEntriesXML" value="false" />
-    <property name="DEBUGGABLE_DEVICE" value="192.168.56.101:5555" />
+    <property name="DEBUGGABLE_DEVICE" value="HC358W902858" />
     <property name="DEBUGGABLE_PROCESS" value="com.lutours.tuwen" />
     <property name="SHOW_ALL_PROCESSES" value="false" />
     <property name="OverrideImplement.combined" value="true" />
@@ -463,6 +575,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -488,19 +613,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -563,48 +675,6 @@
       <option name="DEPLOY" value="true" />
       <option name="ARTIFACT_NAME" value="" />
       <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="true" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="USE_COMMAND_LINE" value="true" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <RunnerSettings RunnerId="AndroidDebugRunner" />
-      <ConfigurationWrapper RunnerId="AndroidDebugRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="styled" type="AndroidRunConfigurationType" factoryName="Android Application">
-      <module name="styled" />
-      <option name="ACTIVITY_CLASS" value="" />
-      <option name="MODE" value="default_activity" />
-      <option name="DEPLOY" value="true" />
-      <option name="ARTIFACT_NAME" value="" />
-      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="true" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="USE_COMMAND_LINE" value="true" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <RunnerSettings RunnerId="AndroidDebugRunner" />
-      <ConfigurationWrapper RunnerId="AndroidDebugRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="demos" type="AndroidRunConfigurationType" factoryName="Android Application">
-      <module name="demos" />
-      <option name="ACTIVITY_CLASS" value="" />
-      <option name="MODE" value="default_activity" />
-      <option name="DEPLOY" value="true" />
-      <option name="ARTIFACT_NAME" value="" />
-      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
       <option name="USE_LAST_SELECTED_DEVICE" value="false" />
       <option name="PREFERRED_AVD" value="" />
       <option name="USE_COMMAND_LINE" value="true" />
@@ -619,10 +689,8 @@
       <ConfigurationWrapper RunnerId="AndroidDebugRunner" />
       <method />
     </configuration>
-    <list size="3">
+    <list size="1">
       <item index="0" class="java.lang.String" itemvalue="Android Application.tuwen" />
-      <item index="1" class="java.lang.String" itemvalue="Android Application.styled" />
-      <item index="2" class="java.lang.String" itemvalue="Android Application.demos" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -670,30 +738,30 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1920" height="1124" extended-state="6" />
+    <frame x="0" y="22" width="1440" height="824" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32837301" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32302773" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32234958" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4075547" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22924529" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40651557" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2407932" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32703778" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2415507" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25035766" sideWeight="0.50119334" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32719547" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40084985" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18636848" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32604373" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25035766" sideWeight="0.4988067" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32577905" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -727,115 +795,9 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ant.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="789" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ActionBarSherlock/actionbarsherlock/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1032" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ActionBarSherlock/actionbarsherlock/gen/com/actionbarsherlock/R.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="19" selection-start="172" selection-end="172" vertical-scroll-proportion="0.10964912" vertical-offset="0" max-vertical-offset="684">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../android-support-v7-appcompat/res/values/attrs.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="0" selection-start="1415" selection-end="1415" vertical-scroll-proportion="-8.115385" vertical-offset="254" max-vertical-offset="8430">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ActionBarSherlock/actionbarsherlock/res/values/abs__attrs.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="169" column="20" selection-start="8620" selection-end="8620" vertical-scroll-proportion="-10.2" vertical-offset="2280" max-vertical-offset="6570">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ActionBarSherlock/actionbarsherlock/res/values/abs__styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6270">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/CuttableImageView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="20" selection-start="1207" selection-end="1207" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2415">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ActionBarSherlock/actionbarsherlock-samples/styled/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="153" selection-start="616" selection-end="616" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ActionBarSherlock/actionbarsherlock-samples/styled/src/com/actionbarsherlock/sample/styled/RoundedColourFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="63" selection-start="1414" selection-end="1427" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="855">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ActionBarSherlock/actionbarsherlock-samples/styled/res/values/styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="75" selection-start="1304" selection-end="1304" vertical-scroll-proportion="-13.2" vertical-offset="45" max-vertical-offset="1080">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ActionBarSherlock/actionbarsherlock-samples/styled/res/layout/indeterminate_progress_action.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="60" selection-start="748" selection-end="748" vertical-scroll-proportion="0.28239202" vertical-offset="0" max-vertical-offset="903">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ActionBarSherlock/actionbarsherlock-samples/styled/res/drawable-mdpi/ic_menu_refresh_holo_light.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ActionBarSherlock/actionbarsherlock-samples/styled/res/drawable-mdpi/ic_menu_star_holo_light.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../ActionBarSherlock/actionbarsherlock-samples/styled/libs/nineoldandroids-2.2.0.jar!/com/nineoldandroids/animation/ObjectAnimator.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="19" selection-start="178" selection-end="178" vertical-scroll-proportion="0.11127596" vertical-offset="0" max-vertical-offset="1035" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ActionBarSherlock/actionbarsherlock-samples/styled/res/layout/main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="16" selection-start="761" selection-end="761" vertical-scroll-proportion="-4.9038463" vertical-offset="0" max-vertical-offset="405" />
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ActionBarSherlock/actionbarsherlock-samples/styled/res/menu/main_menu.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="99" selection-start="1753" selection-end="1753" vertical-scroll-proportion="0.6760563" vertical-offset="90" max-vertical-offset="1155" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../ActionBarSherlock/actionbarsherlock/src/com/actionbarsherlock/view/MenuItem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="515" column="64" selection-start="20073" selection-end="20073" vertical-scroll-proportion="0.43537414" vertical-offset="7150" max-vertical-offset="8790">
-          <folding />
-        </state>
+        <state line="515" column="64" selection-start="20073" selection-end="20073" vertical-scroll-proportion="0.43537414" vertical-offset="7150" max-vertical-offset="8790" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/values/colors.xml">
@@ -878,16 +840,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../ActionBarSherlock/actionbarsherlock/src/com/actionbarsherlock/app/SherlockFragmentActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="41" selection-start="1603" selection-end="1615" vertical-scroll-proportion="0.3537415" vertical-offset="130" max-vertical-offset="4485">
-          <folding />
-        </state>
+        <state line="41" column="41" selection-start="1603" selection-end="1615" vertical-scroll-proportion="0.3537415" vertical-offset="130" max-vertical-offset="4485" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../ActionBarSherlock/actionbarsherlock/src/com/actionbarsherlock/app/ActionBar.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="339" column="7" selection-start="13557" selection-end="13557" vertical-scroll-proportion="0.37414965" vertical-offset="4450" max-vertical-offset="14070">
-          <folding />
-        </state>
+        <state line="339" column="7" selection-start="13557" selection-end="13557" vertical-scroll-proportion="0.37414965" vertical-offset="4450" max-vertical-offset="14070" />
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Library/Developer/Xamarin/android-sdk-mac_x86/sources/android-18/android/widget/ImageView.java">
@@ -895,18 +853,6 @@
         <state line="1014" column="23" selection-start="35342" selection-end="35342" vertical-scroll-proportion="0.0" vertical-offset="14108" max-vertical-offset="17670">
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Developer/Xamarin/android-sdk-mac_x86/sources/android-18/android/view/View.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="849" column="21" selection-start="34593" selection-end="34593" vertical-scroll-proportion="0.292517" vertical-offset="11125" max-vertical-offset="278940">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="735" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../ActionBarSherlock/actionbarsherlock-samples/demos/res/layout/text.xml">
@@ -924,9 +870,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../ActionBarSherlock/actionbarsherlock-samples/demos/res/layout/custom_view.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="4" selection-start="196" selection-end="234" vertical-scroll-proportion="-1.1538461" vertical-offset="0" max-vertical-offset="450">
-          <folding />
-        </state>
+        <state line="4" column="4" selection-start="196" selection-end="234" vertical-scroll-proportion="-1.1538461" vertical-offset="0" max-vertical-offset="450" />
       </provider>
       <provider editor-type-id="android-designer">
         <state />
@@ -935,11 +879,6 @@
     <entry file="file://$PROJECT_DIR$/res/drawable-hdpi/back_button.png">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/libraries/libs.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="647" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
@@ -961,13 +900,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="1133" selection-end="1133" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/DrawingView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="78" column="34" selection-start="2862" selection-end="2862" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="2715">
@@ -985,18 +917,9 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Library/Developer/Xamarin/android-sdk-mac_x86/sources/android-18/android/widget/LinearLayout.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1847" column="0" selection-start="73997" selection-end="73997" vertical-scroll-proportion="0.12244898" vertical-offset="26850" max-vertical-offset="27585">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/../ActionBarSherlock/actionbarsherlock/libs/android-support-v4.jar!/android/support/v4/app/FragmentTransaction.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="63" selection-start="827" selection-end="827" vertical-scroll-proportion="0.34507042" vertical-offset="25" max-vertical-offset="1035">
-          <folding />
-        </state>
+        <state line="19" column="63" selection-start="827" selection-end="827" vertical-scroll-proportion="0.34507042" vertical-offset="25" max-vertical-offset="1035" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/answer_frag.xml">
@@ -1013,7 +936,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="41" selection-start="660" selection-end="660" vertical-scroll-proportion="0.36734694" vertical-offset="0" max-vertical-offset="735">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1026,23 +949,6 @@
       </provider>
       <provider editor-type-id="android-designer">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/camera_frag.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="19" selection-start="783" selection-end="783" vertical-scroll-proportion="-4.6153846" vertical-offset="0" max-vertical-offset="480">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="51" selection-start="1103" selection-end="1120" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/drawing_frag.xml">
@@ -1075,20 +981,196 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/MyFragmentTabHost.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="9" selection-start="652" selection-end="652" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="750">
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/DrawingFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="5" selection-start="2652" selection-end="2652" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="2340">
+        <state line="11" column="0" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0" vertical-offset="1545" max-vertical-offset="2550">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="508">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Developer/Xamarin/android-sdk-mac_x86/sources/android-18/android/view/Display.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="431" column="15" selection-start="16179" selection-end="16179" vertical-scroll-proportion="0.33164558" vertical-offset="5854" max-vertical-offset="9060">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/Dimension.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="34" selection-start="1317" selection-end="1317" vertical-scroll-proportion="0.4177215" vertical-offset="315" max-vertical-offset="780">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Developer/Xamarin/android-sdk-mac_x86/sources/android-18/android/graphics/drawable/LayerDrawable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="306" column="16" selection-start="10584" selection-end="10584" vertical-scroll-proportion="0.33164558" vertical-offset="4039" max-vertical-offset="10515">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Developer/Xamarin/android-sdk-mac_x86/sources/android-18/android/view/ViewTreeObserver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="485" column="16" selection-start="18004" selection-end="18004" vertical-scroll-proportion="0.0" vertical-offset="6844" max-vertical-offset="14910">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Developer/Xamarin/android-sdk-mac_x86/sources/android-18/android/view/SurfaceView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="85" column="13" selection-start="3750" selection-end="3750" vertical-scroll-proportion="0.33248082" vertical-offset="635" max-vertical-offset="12120">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Developer/Xamarin/android-sdk-mac_x86/sources/android-18/android/widget/FrameLayout.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="386" column="19" selection-start="14609" selection-end="14609" vertical-scroll-proportion="0.67774934" vertical-offset="5030" max-vertical-offset="9360">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Developer/Xamarin/android-sdk-mac_x86/sources/android-18/android/widget/LinearLayout.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1843" column="15" selection-start="73891" selection-end="73891" vertical-scroll-proportion="-0.6265985" vertical-offset="27125" max-vertical-offset="27585">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Developer/Xamarin/android-sdk-mac_x86/sources/android-18/android/graphics/drawable/ColorDrawable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="106" column="16" selection-start="3035" selection-end="3035" vertical-scroll-proportion="0.8695652" vertical-offset="890" max-vertical-offset="2790">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/camera_frag.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="0" selection-start="1493" selection-end="1493" vertical-scroll-proportion="-2.0192308" vertical-offset="315" max-vertical-offset="750">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Developer/Xamarin/android-sdk-mac_x86/sources/android-18/android/hardware/Camera.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="249" column="38" selection-start="10544" selection-end="10555" vertical-scroll-proportion="0.0" vertical-offset="2915" max-vertical-offset="55665">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="59" selection-start="961" selection-end="961" vertical-scroll-proportion="0.0" vertical-offset="44" max-vertical-offset="465">
+          <folding>
+            <element signature="e#883#901#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Developer/Xamarin/android-sdk-mac_x86/sources/android-18/android/view/View.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6005" column="16" selection-start="231786" selection-end="231786" vertical-scroll-proportion="0.2539267" vertical-offset="87953" max-vertical-offset="278940">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Developer/Xamarin/android-sdk-mac_x86/sources/android-18/android/view/ViewGroup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5744" column="19" selection-start="214227" selection-end="214227" vertical-scroll-proportion="0.33164558" vertical-offset="84934" max-vertical-offset="98595">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/SquareMaskLayout.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="0" selection-start="600" selection-end="600" vertical-scroll-proportion="0.0" vertical-offset="215" max-vertical-offset="630">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Developer/Xamarin/android-sdk-mac_x86/sources/android-18/android/widget/RelativeLayout.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="138" column="28" selection-start="5283" selection-end="5283" vertical-scroll-proportion="0.33248082" vertical-offset="1340" max-vertical-offset="27375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Developer/Xamarin/android-sdk-mac_x86/sources/android-18/android/graphics/Bitmap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="350" column="9" selection-start="11783" selection-end="11783" vertical-scroll-proportion="0.0" vertical-offset="2404" max-vertical-offset="21300">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Developer/Xamarin/android-sdk-mac_x86/sources/android-18/android/graphics/Color.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="13" selection-start="1460" selection-end="1460" vertical-scroll-proportion="-10.567089" vertical-offset="4444" max-vertical-offset="6165">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Developer/Xamarin/android-sdk-mac_x86/sources/android-18/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="222" column="19" selection-start="9885" selection-end="9885" vertical-scroll-proportion="0.33248082" vertical-offset="2750" max-vertical-offset="6270">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Software/adt-bundle-mac-x86_64-20130729/sdk/extras/android/support/v4/android-support-v4.jar!/android/support/v4/app/Fragment.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="246" column="9" selection-start="10024" selection-end="10024" vertical-scroll-proportion="-5.04" vertical-offset="3549" max-vertical-offset="4035">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="13" selection-start="344" selection-end="344" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="765">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/CameraFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="35" selection-start="2182" selection-end="2193" vertical-scroll-proportion="-0.2244898" vertical-offset="975" max-vertical-offset="1740">
+        <state line="127" column="13" selection-start="5190" selection-end="5190" vertical-scroll-proportion="0.0" vertical-offset="1675" max-vertical-offset="2340">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#708#1212#0" expanded="true" />
-            <element signature="e#1205#1206#0" expanded="true" />
+            <element signature="e#774#1546#0" expanded="true" />
+            <element signature="e#1239#1528#0" expanded="true" />
+            <element signature="e#1513#1514#0" expanded="true" />
+            <element signature="e#1539#1540#0" expanded="true" />
+            <element signature="e#3083#4881#0" expanded="true" />
+            <element signature="e#4870#4871#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/CameraPreview.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="83" column="0" selection-start="2728" selection-end="2728" vertical-scroll-proportion="0.14066496" vertical-offset="1190" max-vertical-offset="3360">
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1145,7 +1227,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>styled</last-edited>
+          <last-edited>tuwen</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1169,7 +1251,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>libs</last-edited>
+          <last-edited>android-support-v4</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
