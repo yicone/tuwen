@@ -24,6 +24,7 @@ public class CameraPreview extends SurfaceView implements SurfaceHolder.Callback
     private SurfaceHolder mHolder;
     private Camera mCamera;
     private Activity mActivity;
+    private int mDegrees;
 
     public CameraPreview(Activity activity) {
         super(activity);
@@ -51,7 +52,8 @@ public class CameraPreview extends SurfaceView implements SurfaceHolder.Callback
 
     @Override
     public void surfaceCreated(SurfaceHolder holder) {
-        startCamera();
+        setCamera();
+        startPreview();
     }
 
     @Override
@@ -88,13 +90,16 @@ public class CameraPreview extends SurfaceView implements SurfaceHolder.Callback
         releaseCamera();
     }
 
-    public void startCamera(){
+    public void setCamera(){
         releaseCamera();
 
         mCamera = Camera.open();
 
         setupCamera();
-        setCameraDisplayOrientation(mActivity);
+        setCameraDisplayOrientation();
+    }
+
+    public void startPreview(){
         // The Surface has been created, now tell the camera where to draw the preview.
         try {
             mCamera.setPreviewDisplay(mHolder);
@@ -176,12 +181,12 @@ public class CameraPreview extends SurfaceView implements SurfaceHolder.Callback
         return bestSize;
     }
 
-    public void setCameraDisplayOrientation(Activity activity) {
+    public void setCameraDisplayOrientation() {
         android.hardware.Camera.CameraInfo info =
                 new android.hardware.Camera.CameraInfo();
         int cameraId = Camera.CameraInfo.CAMERA_FACING_BACK;
         android.hardware.Camera.getCameraInfo(cameraId, info);
-        int rotation = activity.getWindowManager().getDefaultDisplay()
+        int rotation = mActivity.getWindowManager().getDefaultDisplay()
                 .getRotation();
         int degrees = 0;
         switch (rotation) {
@@ -199,6 +204,8 @@ public class CameraPreview extends SurfaceView implements SurfaceHolder.Callback
                 break;
         }
 
+        mDegrees = degrees;
+
         int result;
         if (info.facing == Camera.CameraInfo.CAMERA_FACING_FRONT) {
             result = (info.orientation + degrees) % 360;
@@ -207,6 +214,10 @@ public class CameraPreview extends SurfaceView implements SurfaceHolder.Callback
             result = (info.orientation - degrees + 360) % 360;
         }
         mCamera.setDisplayOrientation(result);
+    }
+
+    public int getDegrees(){
+        return mDegrees;
     }
 
     public void releaseCamera() {

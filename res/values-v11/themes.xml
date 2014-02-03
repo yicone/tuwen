@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Theme.MyFancyTheme" parent="android:Theme.Holo">
+    <style name="Theme.MyFancyTheme" parent="android:Theme.Holo.NoActionBar">
         <item name="android:homeAsUpIndicator">@drawable/avatar</item>
     </style>
 </resources>

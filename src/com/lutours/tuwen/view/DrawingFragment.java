@@ -1,7 +1,6 @@
 package com.lutours.tuwen.view;
 
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -22,12 +21,12 @@ public class DrawingFragment extends Fragment implements View.OnClickListener {
 	private View rootView;
 
 	private DrawingView dvCanvas;
-	private byte[] mBitmapData;
+	private Bitmap mBitmap;
 
-	public static DrawingFragment create(byte[] bitmapData) {
+	public static DrawingFragment create(Bitmap bitmap) {
 		DrawingFragment fragment = new DrawingFragment();
         Bundle args = new Bundle();
-        args.putByteArray(KEY_BITMAP_DATA, bitmapData);
+        args.putParcelable(KEY_BITMAP_DATA, bitmap);
         fragment.setArguments(args);
         return fragment;
     }
@@ -36,7 +35,7 @@ public class DrawingFragment extends Fragment implements View.OnClickListener {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Bundle args = this.getArguments();
-        mBitmapData = args.getByteArray(KEY_BITMAP_DATA);
+        mBitmap = args.getParcelable(KEY_BITMAP_DATA);
     }
 
     @Override
@@ -44,8 +43,7 @@ public class DrawingFragment extends Fragment implements View.OnClickListener {
         rootView = inflater.inflate(R.layout.drawing_frag, container, false);
 
         dvCanvas = (DrawingView) rootView.findViewById(R.id.dvCanvas);
-        Bitmap bitmap = BitmapFactory.decodeByteArray(mBitmapData, 0, mBitmapData.length);
-        dvCanvas.setImageBitmap(bitmap);
+        dvCanvas.setImageBitmap(mBitmap);
 	    dvCanvas.setDrawingCacheEnabled(true);
 
 //        ActionBar actionBar = getSherlockActivity().getSupportActionBar();

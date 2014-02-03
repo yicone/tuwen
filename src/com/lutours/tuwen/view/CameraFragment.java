@@ -1,6 +1,9 @@
 package com.lutours.tuwen.view;
 
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Color;
+import android.graphics.Matrix;
 import android.hardware.Camera;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -25,17 +28,27 @@ public class CameraFragment extends Fragment implements View.OnClickListener {
     private Camera.PictureCallback mPictureCallback = new Camera.PictureCallback() {
         @Override
         public void onPictureTaken(byte[] data, Camera camera) {
+            mPreview.releaseCamera();
 
             // goto DrawingFragment
             final FragmentManager fm = getFragmentManager();
             FragmentTransaction ft = fm.beginTransaction();
-            Fragment fragment = DrawingFragment.create(data);
+            Bitmap bitmap = BitmapFactory.decodeByteArray(data, 0, data.length);
+            Matrix matrix = new Matrix();
+            matrix.setRotate(mPreview.getDegrees());
+            int yStart = 0;
+            int xStart = (bitmap.getWidth() - bitmap.getHeight()) / 2;
+            int width = Math.min(bitmap.getWidth(), bitmap.getHeight());
+            int height = width;
+            bitmap = Bitmap.createBitmap(bitmap, xStart, yStart, width, height, matrix, true);
+            Fragment fragment = DrawingFragment.create(bitmap);
             ft.replace(android.R.id.content, fragment).addToBackStack(null).commit();
             fm.addOnBackStackChangedListener(new FragmentManager.OnBackStackChangedListener() {
                 @Override
                 public void onBackStackChanged() {
                     if (fm.getBackStackEntryCount() == 0) {
-                        mPreview.startCamera();
+                        mPreview.setCamera();
+                        mPreview.startPreview();
                     }
                 }
             });
@@ -122,7 +135,7 @@ public class CameraFragment extends Fragment implements View.OnClickListener {
     @Override
     public void onResume() {
         super.onResume();
-        mPreview.startCamera();
+        mPreview.setCamera();
     }
 
     @Override
