@@ -81,6 +81,14 @@ public class AnswerFragment extends Fragment implements View.OnClickListener {
 		        question.setBitmapData(mBitmapData);
 
 		        svr.addQuestion(question);
+
+                // 跳转到列表页
+                FragmentManager fm = getFragmentManager();
+                fm.popBackStack();  // pop AnswerFragment
+                fm.popBackStack();  // pop DrawingFragment
+                MyFragmentTabHost tabHost = ((MainActivity) getActivity()).getTabHost();
+                tabHost.setVisibility(View.VISIBLE);
+                tabHost.setCurrentTab(0);
 		        break;
 	        }
         }

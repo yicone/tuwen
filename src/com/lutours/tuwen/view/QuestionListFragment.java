@@ -22,34 +22,66 @@ import java.util.List;
  * 问题列表页
  */
 public class QuestionListFragment extends Fragment {
-	@Override
-	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-		View rootView = inflater.inflate(R.layout.question_list_frag, container, false);
-		GridView gridView = (GridView) rootView.findViewById(R.id.gridView);
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View rootView = inflater.inflate(R.layout.question_list_frag, container, false);
+        GridView gridView = (GridView) rootView.findViewById(R.id.gridView);
 
-		IQuestionService svr = new QuestionServiceImpl(getActivity());
-		List<Question> questions = svr.getQuestions(null, null);
-		Adapter adapter = new Adapter(getActivity(), questions);
-		gridView.setAdapter(adapter);
+        IQuestionService svr = new QuestionServiceImpl(getActivity());
+        List<Question> questions = svr.getQuestions(null, null);
+        ImageAdapter adapter = new ImageAdapter(getActivity(), questions);
+        gridView.setAdapter(adapter);
 
-		return rootView;
-	}
+        return rootView;
+    }
 
-	private static class Adapter extends ArrayAdapter<Question> {
+    private static class ImageAdapter extends ArrayAdapter<Question> {
+        List<Question> mQuestions;
 
-		public Adapter(Context context, List<Question> questions) {
-			super(context, 0, questions);
-		}
+        public ImageAdapter(Context context, List<Question> questions) {
+            super(context, 0, questions);
+            mQuestions = questions;
+        }
 
-		@Override
-		public View getView(int position, View convertView, ViewGroup parent) {
-			convertView = LayoutInflater.from(getContext()).inflate(R.layout.question_list_item, parent, false);
-			Question item = this.getItem(position);
-			ImageView imageView = (ImageView) convertView.findViewById(R.id.imageView);
-			Bitmap bitmap = BitmapFactory.decodeByteArray(item.getBitmapData(), 0, item.getBitmapData().length);
-			imageView.setImageBitmap(bitmap);
+        @Override
+        public View getView(int position, View convertView, ViewGroup parent) {
+            Holder holder;
+            if (convertView == null) {  // if it's not recycled, initialize some attributes
+                holder = new Holder();
+                ImageView imageView = new ImageView(getContext()) {
+                    @Override
+                    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+                        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+                        setMeasuredDimension(getMeasuredWidth(), getMeasuredWidth());
+                    }
+                };
+                imageView.setLayoutParams(new GridView.LayoutParams(GridView.LayoutParams.WRAP_CONTENT, GridView.LayoutParams.WRAP_CONTENT));
+                imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
+                //imageView.setPadding(8, 8, 8, 8);
+                holder.setImageView(imageView);
+                convertView = imageView;
+                convertView.setTag(holder);
+            } else {
+                holder = (Holder) convertView.getTag();
+            }
 
-			return convertView;
-		}
-	}
+            byte[] data = mQuestions.get(position).getBitmapData();
+            Bitmap bitmap = BitmapFactory.decodeByteArray(data, 0, data.length);
+            holder.getImageView().setImageBitmap(bitmap);
+
+            return convertView;
+        }
+
+        private static class Holder {
+            private ImageView imageView;
+
+            public ImageView getImageView() {
+                return imageView;
+            }
+
+            public void setImageView(ImageView imageView) {
+                this.imageView = imageView;
+            }
+        }
+    }
 }

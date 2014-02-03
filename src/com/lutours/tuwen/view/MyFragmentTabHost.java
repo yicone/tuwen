@@ -22,8 +22,9 @@ public class MyFragmentTabHost extends FragmentTabHost {
 
 	@Override
 	public void setCurrentTab(int index) {
-		if (mTabIndexStack.contains(index)) {
-			mTabIndexStack.remove(index);
+        int location = mTabIndexStack.indexOf(index);
+		if (location >= 0) {
+			mTabIndexStack.remove(location);
 		}
 		mTabIndexStack.add(index);
 		super.setCurrentTab(index);
@@ -31,10 +32,10 @@ public class MyFragmentTabHost extends FragmentTabHost {
 
 	public boolean onBackPressed() {
 		if (mTabIndexStack.size() > 0) {
-			int index = mTabIndexStack.get(mTabIndexStack.size() - 1);
-			mTabIndexStack.remove(new Integer(index));
+			int location = mTabIndexStack.size() - 1;
+			mTabIndexStack.remove(location);
 			if (mTabIndexStack.size() > 0) {
-				index = mTabIndexStack.get(mTabIndexStack.size() - 1);
+				int index = mTabIndexStack.get(mTabIndexStack.size() - 1);
 				super.setCurrentTab(index);
 				return true;
 			}
