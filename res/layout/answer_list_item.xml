@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:paddingTop="10dp"
+              android:paddingBottom="10dp">
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginRight="10dp"
+                  android:orientation="vertical">
+        <ImageView android:id="@+id/ivAvatar"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginBottom="5dp"
+                   android:src="@drawable/avatar"/>
+        <TextView android:id="@+id/tvApproveCount"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center_horizontal"
+                  android:background="@color/main_color"
+                  android:paddingLeft="5dp"
+                  android:paddingRight="5dp"
+                  android:text="60"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical">
+        <TextView android:id="@+id/tvNickname" android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginBottom="5dp"
+                  android:text="图灵Don"/>
+        <TextView android:id="@+id/tvAnswerText" android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:maxLines="3"
+                  android:ellipsize="end"
+                  android:text="豆瓣的瓶颈就是不知道怎么利用【小清新】这张牌賺钱。连陈绮贞、五月天和郭敬明都利用这赚到钱了，豆瓣还不知道怎么赚钱简直可耻。豆瓣的核心品牌是小清新，或者说文艺，或者说青春。"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -19,6 +19,7 @@ public interface IQuestionService {
 
 	void addAnswer(long questionId, Answer answer);
 
+    List<Answer> getAnswers(long questionId);
 
 	void commentQuestion(long questionId, Comment comment);
 

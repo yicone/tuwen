@@ -1,9 +1,11 @@
 package com.lutours.tuwen.service;
 
+import java.io.Serializable;
+
 /**
  * Created by xdzheng on 14-1-28.
  */
-public class Question {
+public class Question implements Serializable {
 	private long questionId;
 	private long userId;
 	private String text;

@@ -9,20 +9,48 @@
     <shared>
       <config />
     </shared>
+    <layouts>
+      <layout url="file://$PROJECT_DIR$/res/layout/question_frag.xml">
+        <config>
+          <device>Nexus 4</device>
+          <theme>@android:style/Theme.Holo.Light.NoActionBar</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/res/layout/question_list_frag.xml">
+        <config>
+          <device>Nexus 4</device>
+          <theme>@android:style/Theme.Holo.Light.Dialog.NoActionBar</theme>
+        </config>
+      </layout>
+    </layouts>
   </component>
   <component name="AndroidLogFilters">
     <option name="TOOL_WINDOW_CUSTOM_FILTER" value="tuwen" />
     <option name="TOOL_WINDOW_LOG_LEVEL" value="ERROR" />
   </component>
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/QuestionFragment.java" line="51" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="30888139-0cb0-4788-aaed-9f72f155bf48" name="Default" comment="提问页">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/layout/question_list_item.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lutours/tuwen/view/AnswerFragment.java" afterPath="$PROJECT_DIR$/src/com/lutours/tuwen/view/AnswerFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lutours/tuwen/view/CameraPreview.java" afterPath="$PROJECT_DIR$/src/com/lutours/tuwen/view/CameraPreview.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/lutours/tuwen/view/QuestionFragment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/lutours/tuwen/view/SquareImageView.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/answer_list_header.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/answer_list_item.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/question_frag.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/res/layout/answer_frag.xml" afterPath="$PROJECT_DIR$/res/layout/ask_frag.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/lutours/tuwen/view/AnswerFragment.java" afterPath="$PROJECT_DIR$/src/com/lutours/tuwen/view/AskFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lutours/tuwen/service/Answer.java" afterPath="$PROJECT_DIR$/src/com/lutours/tuwen/service/Answer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lutours/tuwen/view/DrawingFragment.java" afterPath="$PROJECT_DIR$/src/com/lutours/tuwen/view/DrawingFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lutours/tuwen/service/IQuestionService.java" afterPath="$PROJECT_DIR$/src/com/lutours/tuwen/service/IQuestionService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lutours/tuwen/view/MainActivity.java" afterPath="$PROJECT_DIR$/src/com/lutours/tuwen/view/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lutours/tuwen/view/MyFragmentTabHost.java" afterPath="$PROJECT_DIR$/src/com/lutours/tuwen/view/MyFragmentTabHost.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lutours/tuwen/service/Question.java" afterPath="$PROJECT_DIR$/src/com/lutours/tuwen/service/Question.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lutours/tuwen/view/QuestionListFragment.java" afterPath="$PROJECT_DIR$/src/com/lutours/tuwen/view/QuestionListFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/lutours/tuwen/service/QuestionServiceImpl.java" afterPath="$PROJECT_DIR$/src/com/lutours/tuwen/service/QuestionServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/drawing_frag.xml" afterPath="$PROJECT_DIR$/res/layout/drawing_frag.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/main.xml" afterPath="$PROJECT_DIR$/res/layout/main.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/question_list_frag.xml" afterPath="$PROJECT_DIR$/res/layout/question_list_frag.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values-v11/themes.xml" afterPath="$PROJECT_DIR$/res/values-v11/themes.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tuwen.iws" />
@@ -259,7 +287,22 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/AnswerFragment.java" line="89" class="com.lutours.tuwen.view.AnswerFragment" package="com.lutours.tuwen.view">
+      <breakpoint url="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/AskFragment.java" line="89" class="com.lutours.tuwen.view.AskFragment" package="com.lutours.tuwen.view">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/QuestionFragment.java" line="90" class="com.lutours.tuwen.view.QuestionFragment.AnswerListAdapter" package="com.lutours.tuwen.view">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -284,54 +327,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/MainActivity.java">
+      <file leaf-file-name="QuestionFragment.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/QuestionFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="5" selection-start="1934" selection-end="1934" vertical-scroll-proportion="0.0" vertical-offset="434" max-vertical-offset="825">
-              <folding>
-                <element signature="e#1978#1979#0" expanded="true" />
-                <element signature="e#2009#2010#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MyFragmentTabHost.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/MyFragmentTabHost.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="0" selection-start="752" selection-end="752" vertical-scroll-proportion="0.0" vertical-offset="260" max-vertical-offset="705">
+            <state line="56" column="100" selection-start="2096" selection-end="2096" vertical-scroll-proportion="0.0" vertical-offset="308" max-vertical-offset="1455">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AnswerFragment.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/AnswerFragment.java">
+      <file leaf-file-name="answer_list_header.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/answer_list_header.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="87" column="58" selection-start="2871" selection-end="2871" vertical-scroll-proportion="-5.9615383" vertical-offset="940" max-vertical-offset="1305">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QuestionListFragment.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/QuestionListFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="9" selection-start="2895" selection-end="2895" vertical-scroll-proportion="0.375" vertical-offset="705" max-vertical-offset="1155">
-              <folding>
-                <element signature="e#3021#3022#0" expanded="true" />
-                <element signature="e#3069#3070#0" expanded="true" />
-                <element signature="e#3130#3131#0" expanded="true" />
-                <element signature="e#3188#3189#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="question_list_frag.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/question_list_frag.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="41" selection-start="488" selection-end="488" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="330">
+            <state line="15" column="14" selection-start="705" selection-end="705" vertical-scroll-proportion="-4.326923" vertical-offset="0" max-vertical-offset="345">
               <folding />
             </state>
           </provider>
@@ -340,23 +348,48 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CameraFragment.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/CameraFragment.java">
+      <file leaf-file-name="Answer.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/service/Answer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="110" column="0" selection-start="4914" selection-end="4914" vertical-scroll-proportion="0.0" vertical-offset="462" max-vertical-offset="2400">
+            <state line="6" column="15" selection-start="112" selection-end="112" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QuestionServiceImpl.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/service/QuestionServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="73" column="27" selection-start="1733" selection-end="1733" vertical-scroll-proportion="0.0" vertical-offset="905" max-vertical-offset="1980">
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1596#1604#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CameraPreview.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/CameraPreview.java">
+      <file leaf-file-name="question_frag.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/question_frag.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="216" column="0" selection-start="6909" selection-end="6909" vertical-scroll-proportion="0.0" vertical-offset="2960" max-vertical-offset="3375">
+            <state line="36" column="37" selection-start="1657" selection-end="1657" vertical-scroll-proportion="-1.1538461" vertical-offset="480" max-vertical-offset="945">
               <folding />
             </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="answer_list_item.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/res/layout/answer_list_item.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="37" selection-start="338" selection-end="338" vertical-scroll-proportion="0.3398058" vertical-offset="0" max-vertical-offset="690">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
           </provider>
         </entry>
       </file>
@@ -398,29 +431,41 @@
         <option value="$PROJECT_DIR$/res/layout/action_bar.xml" />
         <option value="$PROJECT_DIR$/src/com/lutours/tuwen/view/AskFrag.java" />
         <option value="$PROJECT_DIR$/src/com/lutours/tuwen/view/DrawingFrag.java" />
-        <option value="$PROJECT_DIR$/res/layout/answer_frag.xml" />
-        <option value="$PROJECT_DIR$/res/layout/drawing_frag.xml" />
         <option value="$PROJECT_DIR$/res/layout/camera_action_bar.xml" />
         <option value="$PROJECT_DIR$/res/layout/drawing_action_bar.xml" />
         <option value="$PROJECT_DIR$/res/layout/camera_frag.xml" />
         <option value="$PROJECT_DIR$/src/com/lutours/tuwen/view/SquareMaskLayout.java" />
         <option value="$PROJECT_DIR$/src/com/lutours/tuwen/view/OnBackPressedListener.java" />
-        <option value="$PROJECT_DIR$/res/values-v11/themes.xml" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/src/com/lutours/tuwen/view/DrawingFragment.java" />
         <option value="$PROJECT_DIR$/src/com/lutours/tuwen/view/CameraFragment.java" />
         <option value="$PROJECT_DIR$/src/com/lutours/tuwen/view/CameraPreview.java" />
         <option value="$PROJECT_DIR$/src/com/lutours/tuwen/view/MyFragmentTabHost.java" />
-        <option value="$PROJECT_DIR$/src/com/lutours/tuwen/view/MainActivity.java" />
         <option value="$PROJECT_DIR$/src/com/lutours/tuwen/view/AnswerFragment.java" />
         <option value="$PROJECT_DIR$/res/layout/question_list_item.xml" />
-        <option value="$PROJECT_DIR$/res/layout/question_list_frag.xml" />
+        <option value="$PROJECT_DIR$/res/values-v11/themes.xml" />
+        <option value="$PROJECT_DIR$/src/com/lutours/tuwen/service/Question.java" />
+        <option value="$PROJECT_DIR$/src/com/lutours/tuwen/view/SquareImageView.java" />
         <option value="$PROJECT_DIR$/src/com/lutours/tuwen/view/QuestionListFragment.java" />
+        <option value="$PROJECT_DIR$/res/layout/drawing_frag.xml" />
+        <option value="$PROJECT_DIR$/res/layout/answer_frag.xml" />
+        <option value="$PROJECT_DIR$/src/com/lutours/tuwen/view/MainActivity.java" />
+        <option value="$PROJECT_DIR$/res/layout/main.xml" />
+        <option value="$PROJECT_DIR$/res/layout/question_list_frag.xml" />
+        <option value="$PROJECT_DIR$/src/com/lutours/tuwen/view/AskFragment.java" />
+        <option value="$PROJECT_DIR$/src/com/lutours/tuwen/service/IQuestionService.java" />
+        <option value="$PROJECT_DIR$/src/com/lutours/tuwen/service/QuestionServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/lutours/tuwen/service/Answer.java" />
+        <option value="$PROJECT_DIR$/res/layout/answer_list_header.xml" />
+        <option value="$PROJECT_DIR$/src/com/lutours/tuwen/view/QuestionFragment.java" />
+        <option value="$PROJECT_DIR$/res/layout/question_frag.xml" />
+        <option value="$PROJECT_DIR$/res/layout/answer_list_item.xml" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="22" />
+    <option name="x" value="1" />
+    <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="824" />
   </component>
@@ -475,8 +520,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -545,12 +588,108 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tuwen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tuwen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tuwen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values-v11" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tuwen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tuwen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tuwen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tuwen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tuwen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tuwen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tuwen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tuwen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drawable-hdpi" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -626,19 +765,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -664,6 +790,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -789,39 +928,67 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="824" extended-state="6" />
+    <frame x="1" y="23" width="1440" height="824" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32837301" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32234958" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32234958" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32719547" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40651557" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2407932" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2501762" sideWeight="0.501182" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32577905" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39943343" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3243626" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.398017" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25035766" sideWeight="0.49881798" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25071633" sideWeight="0.49881798" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3243626" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32768363" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32837301" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2407932" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2501762" sideWeight="0.501182" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25035766" sideWeight="0.49881798" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3243626" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32234958" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32719547" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40651557" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32485875" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.398017" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
-    <option name="RECENTLY_FILTERED_USERS">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
       <collection />
     </option>
   </component>
@@ -846,107 +1013,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../ActionBarSherlock/actionbarsherlock-samples/demos/res/layout/custom_view.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="4" selection-start="196" selection-end="234" vertical-scroll-proportion="-1.1538461" vertical-offset="0" max-vertical-offset="450" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/drawable-hdpi/back_button.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="647" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="16815" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/DrawingView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="34" selection-start="2862" selection-end="2862" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="2715">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="14" selection-start="317" selection-end="317" vertical-scroll-proportion="-2.0192308" vertical-offset="0" max-vertical-offset="225" />
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../ActionBarSherlock/actionbarsherlock/libs/android-support-v4.jar!/android/support/v4/app/FragmentTransaction.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="63" selection-start="827" selection-end="827" vertical-scroll-proportion="0.34507042" vertical-offset="25" max-vertical-offset="1035" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/answer_frag.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="15" selection-start="1240" selection-end="1240" vertical-scroll-proportion="0.39412674" vertical-offset="0" max-vertical-offset="647">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/ask_dialog.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1125" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/drawing_frag.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="11" selection-start="562" selection-end="562" vertical-scroll-proportion="-2.8846154" vertical-offset="0" max-vertical-offset="330">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/camera_action_bar.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="16" selection-start="1189" selection-end="1189" vertical-scroll-proportion="0.54545456" vertical-offset="0" max-vertical-offset="660">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/drawing_action_bar.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="50" selection-start="153" selection-end="165" vertical-scroll-proportion="0.06818182" vertical-offset="0" max-vertical-offset="660">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="508" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Developer/Xamarin/android-sdk-mac_x86/sources/android-18/android/view/Display.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="431" column="15" selection-start="16179" selection-end="16179" vertical-scroll-proportion="0.33164558" vertical-offset="5854" max-vertical-offset="9060" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/Dimension.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="38" column="34" selection-start="1317" selection-end="1317" vertical-scroll-proportion="0.4177215" vertical-offset="315" max-vertical-offset="780">
@@ -980,13 +1046,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/camera_frag.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="0" selection-start="1493" selection-end="1493" vertical-scroll-proportion="-2.0192308" vertical-offset="315" max-vertical-offset="750">
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Library/Developer/Xamarin/android-sdk-mac_x86/sources/android-18/android/view/ViewGroup.java">
@@ -1034,21 +1100,12 @@
     </entry>
     <entry file="file://$USER_HOME$/Library/Developer/Xamarin/android-sdk-mac_x86/sources/android-18/android/graphics/Bitmap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="41" selection-start="920" selection-end="920" vertical-scroll-proportion="0.07594936" vertical-offset="60" max-vertical-offset="21300">
-          <folding />
-        </state>
+        <state line="28" column="41" selection-start="920" selection-end="920" vertical-scroll-proportion="0.07594936" vertical-offset="60" max-vertical-offset="21300" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="35" selection-start="517" selection-end="517" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/values-v11/themes.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="75" selection-start="126" selection-end="126" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="165">
           <folding />
         </state>
       </provider>
@@ -1062,14 +1119,7 @@
     </entry>
     <entry file="file://$USER_HOME$/Library/Developer/Xamarin/android-sdk-mac_x86/sources/android-18/java/util/LinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="639" column="13" selection-start="19801" selection-end="19801" vertical-scroll-proportion="0.0" vertical-offset="9178" max-vertical-offset="14670">
-          <folding>
-            <element signature="e#0#29193#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#27810#27840#0" expanded="false" />
-            <element signature="e#28633#28663#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="639" column="13" selection-start="19801" selection-end="19801" vertical-scroll-proportion="0.0" vertical-offset="9178" max-vertical-offset="14670" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/DrawingFragment.java">
@@ -1081,9 +1131,7 @@
     </entry>
     <entry file="file://$USER_HOME$/Library/Developer/Xamarin/android-sdk-mac_x86/sources/android-18/android/support/v4/app/Fragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="570" column="0" selection-start="19682" selection-end="19682" vertical-scroll-proportion="0.0" vertical-offset="7633" max-vertical-offset="24360">
-          <folding />
-        </state>
+        <state line="570" column="0" selection-start="19682" selection-end="19682" vertical-scroll-proportion="0.0" vertical-offset="7633" max-vertical-offset="24360" />
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Library/Developer/Xamarin/android-sdk-mac_x86/sources/android-18/android/os/Looper.java">
@@ -1100,56 +1148,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Library/Developer/Xamarin/android-sdk-mac_x86/sources/android-18/android/view/View.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17719" column="20" selection-start="686762" selection-end="686762" vertical-scroll-proportion="0.33239436" vertical-offset="262637" max-vertical-offset="278940">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Library/Developer/Xamarin/android-sdk-mac_x86/sources/android-18/android/widget/TabWidget.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="452" column="16" selection-start="16831" selection-end="16831" vertical-scroll-proportion="0.33152175" vertical-offset="6223" max-vertical-offset="8100">
-          <folding />
-        </state>
+        <state line="452" column="16" selection-start="16831" selection-end="16831" vertical-scroll-proportion="0.33152175" vertical-offset="6223" max-vertical-offset="8100" />
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Library/Developer/Xamarin/android-sdk-mac_x86/sources/android-18/android/widget/TabHost.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="390" column="16" selection-start="13452" selection-end="13452" vertical-scroll-proportion="0.33248082" vertical-offset="5000" max-vertical-offset="11025">
-          <folding />
-        </state>
+        <state line="390" column="16" selection-start="13452" selection-end="13452" vertical-scroll-proportion="0.33248082" vertical-offset="5000" max-vertical-offset="11025" />
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/Software/adt-bundle-mac-x86_64-20130729/sdk/extras/android/support/v4/android-support-v4.jar!/android/support/v4/app/FragmentTabHost.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="13" selection-start="165" selection-end="165" vertical-scroll-proportion="-2.0594902" vertical-offset="802" max-vertical-offset="1260">
-          <folding />
-        </state>
+        <state line="6" column="13" selection-start="165" selection-end="165" vertical-scroll-proportion="-2.0594902" vertical-offset="802" max-vertical-offset="1260" />
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/Software/adt-bundle-mac-x86_64-20130729/sdk/extras/android/support/v4/android-support-v4.jar!/android/support/v4/app/Fragment.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="57" selection-start="3429" selection-end="3429" vertical-scroll-proportion="-5.04" vertical-offset="1209" max-vertical-offset="4035">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="5" selection-start="1934" selection-end="1934" vertical-scroll-proportion="0.0" vertical-offset="434" max-vertical-offset="825">
-          <folding>
-            <element signature="e#1978#1979#0" expanded="true" />
-            <element signature="e#2009#2010#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="90" column="57" selection-start="3429" selection-end="3429" vertical-scroll-proportion="-5.04" vertical-offset="1209" max-vertical-offset="4035" />
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/Software/adt-bundle-mac-x86_64-20130729/sdk/extras/android/support/v4/android-support-v4.jar!/android/support/v4/app/FragmentManager.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="37" selection-start="897" selection-end="909" vertical-scroll-proportion="0.52691215" vertical-offset="234" max-vertical-offset="1185">
-          <folding />
-        </state>
+        <state line="29" column="37" selection-start="897" selection-end="909" vertical-scroll-proportion="0.52691215" vertical-offset="234" max-vertical-offset="1185" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/MyFragmentTabHost.java">
@@ -1159,32 +1180,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/AnswerFragment.java">
+    <entry file="file://$PROJECT_DIR$/res/values-v11/themes.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="58" selection-start="2871" selection-end="2871" vertical-scroll-proportion="-5.9615383" vertical-offset="940" max-vertical-offset="1305">
+        <state line="2" column="69" selection-start="120" selection-end="120" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="165">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/CameraFragment.java">
+    <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/service/Question.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="110" column="0" selection-start="4914" selection-end="4914" vertical-scroll-proportion="0.0" vertical-offset="462" max-vertical-offset="2400">
+        <state line="7" column="45" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="675">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/SquareImageView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="29" selection-start="719" selection-end="732" vertical-scroll-proportion="0.0" vertical-offset="92" max-vertical-offset="570">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/CameraPreview.java">
+    <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/CameraFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="216" column="0" selection-start="6909" selection-end="6909" vertical-scroll-proportion="0.0" vertical-offset="2975" max-vertical-offset="3375">
+        <state line="34" column="56" selection-start="1167" selection-end="1183" vertical-scroll-proportion="0.0" vertical-offset="387" max-vertical-offset="2400">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/question_list_frag.xml">
+    <entry file="file://$PROJECT_DIR$/res/layout/drawing_frag.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="41" selection-start="488" selection-end="488" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="330">
+        <state line="7" column="38" selection-start="356" selection-end="356" vertical-scroll-proportion="-2.0192308" vertical-offset="0" max-vertical-offset="735">
           <folding />
         </state>
       </provider>
@@ -1192,16 +1220,147 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/ask_frag.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="38" selection-start="340" selection-end="340" vertical-scroll-proportion="-2.0192308" vertical-offset="0" max-vertical-offset="705">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/CameraPreview.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="96" column="0" selection-start="2934" selection-end="2934" vertical-scroll-proportion="0.0" vertical-offset="1193" max-vertical-offset="3375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Developer/Xamarin/android-sdk-mac_x86/platforms/android-18/data/res/drawable-hdpi/star_on.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Developer/Xamarin/android-sdk-mac_x86/platforms/android-18/data/res/drawable-ldpi/star_on.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="34" selection-start="481" selection-end="481" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="795">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="44" selection-start="247" selection-end="247" vertical-scroll-proportion="-0.86538464" vertical-offset="30" max-vertical-offset="510">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/question_list_frag.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="27" selection-start="287" selection-end="287" vertical-scroll-proportion="-1.7307693" vertical-offset="0" max-vertical-offset="660">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/AskFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="38" selection-start="1190" selection-end="1190" vertical-scroll-proportion="0.0" vertical-offset="106" max-vertical-offset="1305">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/service/IUserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="17" selection-start="95" selection-end="95" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/service/IQuestionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="45" selection-start="471" selection-end="471" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="720">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/QuestionListFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="9" selection-start="2895" selection-end="2895" vertical-scroll-proportion="0.375" vertical-offset="705" max-vertical-offset="1155">
+        <state line="41" column="0" selection-start="1662" selection-end="1662" vertical-scroll-proportion="0.0" vertical-offset="212" max-vertical-offset="1110">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Developer/Xamarin/android-sdk-mac_x86/sources/android-18/android/view/View.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15934" column="31" selection-start="614493" selection-end="614493" vertical-scroll-proportion="0.0" vertical-offset="235907" max-vertical-offset="278940">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/service/QuestionServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="27" selection-start="1733" selection-end="1733" vertical-scroll-proportion="0.0" vertical-offset="905" max-vertical-offset="1980">
           <folding>
-            <element signature="e#3021#3022#0" expanded="true" />
-            <element signature="e#3069#3070#0" expanded="true" />
-            <element signature="e#3130#3131#0" expanded="true" />
-            <element signature="e#3188#3189#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1596#1604#0" expanded="true" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/service/Answer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="15" selection-start="112" selection-end="112" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lutours/tuwen/view/QuestionFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="100" selection-start="2096" selection-end="2096" vertical-scroll-proportion="0.0" vertical-offset="308" max-vertical-offset="1455">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/answer_list_header.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="14" selection-start="705" selection-end="705" vertical-scroll-proportion="-4.326923" vertical-offset="0" max-vertical-offset="345">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/question_frag.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="37" selection-start="1657" selection-end="1657" vertical-scroll-proportion="-1.1538461" vertical-offset="480" max-vertical-offset="945">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/answer_list_item.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="37" selection-start="338" selection-end="338" vertical-scroll-proportion="0.3398058" vertical-offset="0" max-vertical-offset="690">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
   </component>

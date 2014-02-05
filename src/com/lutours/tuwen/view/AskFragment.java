@@ -19,17 +19,17 @@ import com.lutours.tuwen.service.QuestionServiceImpl;
 /**
  * Created by apple on 14-1-26.
  */
-public class AnswerFragment extends Fragment implements View.OnClickListener {
+public class AskFragment extends Fragment implements View.OnClickListener {
 
 	private static final String KEY_BITMAP_DATA = "KEY_BITMAP_DATA";
 	private byte[] mBitmapData;
 	private EditText etQuestion;
 
-	private AnswerFragment() {
+	private AskFragment() {
 	}
 
-	public static AnswerFragment create(byte[] bitmapData) {
-		AnswerFragment frag = new AnswerFragment();
+	public static AskFragment create(byte[] bitmapData) {
+		AskFragment frag = new AskFragment();
 		Bundle args = new Bundle();
 		args.putByteArray(KEY_BITMAP_DATA, bitmapData);
 		frag.setArguments(args);
@@ -45,7 +45,7 @@ public class AnswerFragment extends Fragment implements View.OnClickListener {
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.answer_frag, container, false);
+        View rootView = inflater.inflate(R.layout.ask_frag, container, false);
 
 		ImageView ivPhoto = (ImageView) rootView.findViewById(R.id.ivPhoto);
 		Bitmap bitmap = BitmapFactory.decodeByteArray(mBitmapData, 0, mBitmapData.length);
@@ -69,7 +69,7 @@ public class AnswerFragment extends Fragment implements View.OnClickListener {
 	            fm.popBackStack();
 
 	            FragmentTransaction ft = fm.beginTransaction();
-	            ft.remove(AnswerFragment.this);
+	            ft.remove(AskFragment.this);
 	            ft.commit();
 	            break;
 	        }
@@ -84,7 +84,7 @@ public class AnswerFragment extends Fragment implements View.OnClickListener {
 
                 // 跳转到列表页
                 FragmentManager fm = getFragmentManager();
-                fm.popBackStack();  // pop AnswerFragment
+                fm.popBackStack();  // pop AskFragment
                 fm.popBackStack();  // pop DrawingFragment
                 MyFragmentTabHost tabHost = ((MainActivity) getActivity()).getTabHost();
                 tabHost.setVisibility(View.VISIBLE);

@@ -1,13 +1,14 @@
 package com.lutours.tuwen.view;
 
 import android.content.Context;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
@@ -28,9 +29,20 @@ public class QuestionListFragment extends Fragment {
         GridView gridView = (GridView) rootView.findViewById(R.id.gridView);
 
         IQuestionService svr = new QuestionServiceImpl(getActivity());
-        List<Question> questions = svr.getQuestions(null, null);
+        final List<Question> questions = svr.getQuestions(null, null);
         ImageAdapter adapter = new ImageAdapter(getActivity(), questions);
         gridView.setAdapter(adapter);
+
+        gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Question question = questions.get(position);
+                QuestionFragment frag = QuestionFragment.create(question);
+                FragmentManager fm = getFragmentManager();
+                FragmentTransaction ft = fm.beginTransaction();
+                ft.replace(android.R.id.content, frag).addToBackStack(null).commit();
+            }
+        });
 
         return rootView;
     }
@@ -48,13 +60,7 @@ public class QuestionListFragment extends Fragment {
             Holder holder;
             if (convertView == null) {  // if it's not recycled, initialize some attributes
                 holder = new Holder();
-                ImageView imageView = new ImageView(getContext()) {
-                    @Override
-                    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
-                        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
-                        setMeasuredDimension(getMeasuredWidth(), getMeasuredWidth());
-                    }
-                };
+                SquareImageView imageView = new SquareImageView(getContext());
                 imageView.setLayoutParams(new GridView.LayoutParams(GridView.LayoutParams.WRAP_CONTENT, GridView.LayoutParams.WRAP_CONTENT));
                 imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
                 //imageView.setPadding(8, 8, 8, 8);
@@ -66,20 +72,19 @@ public class QuestionListFragment extends Fragment {
             }
 
             byte[] data = mQuestions.get(position).getBitmapData();
-            Bitmap bitmap = BitmapFactory.decodeByteArray(data, 0, data.length);
-            holder.getImageView().setImageBitmap(bitmap);
+            holder.getImageView().setBitmapData(data);
 
             return convertView;
         }
 
         private static class Holder {
-            private ImageView imageView;
+            private SquareImageView imageView;
 
-            public ImageView getImageView() {
+            public SquareImageView getImageView() {
                 return imageView;
             }
 
-            public void setImageView(ImageView imageView) {
+            public void setImageView(SquareImageView imageView) {
                 this.imageView = imageView;
             }
         }

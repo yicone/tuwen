@@ -81,7 +81,7 @@ public class DrawingFragment extends Fragment implements View.OnClickListener {
 		        bmp.compress(Bitmap.CompressFormat.JPEG, 100, stream);
 		        byte[] byteArray = stream.toByteArray();
 
-		        AnswerFragment frag = AnswerFragment.create(byteArray);
+		        AskFragment frag = AskFragment.create(byteArray);
 		        ft.replace(android.R.id.content, frag);
 		        ft.addToBackStack(null);
 		        ft.commit();

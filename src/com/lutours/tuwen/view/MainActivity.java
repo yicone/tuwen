@@ -26,15 +26,15 @@ public class MainActivity extends FragmentActivity {
         });
 
         TabHost.TabSpec tabSpec = mTabHost.newTabSpec("home");
-        tabSpec.setIndicator("list", getResources().getDrawable(android.R.drawable.star_on));
-        mTabHost.addTab(tabSpec, QuestionListFragment.class, null);
-
-        tabSpec = mTabHost.newTabSpec("home");
-        tabSpec.setIndicator("", getResources().getDrawable(R.drawable.camera_icon));
+        tabSpec.setIndicator("HOME", getResources().getDrawable(android.R.drawable.star_on));
         mTabHost.addTab(tabSpec, QuestionListFragment.class, null);
 
         tabSpec = mTabHost.newTabSpec("camera");
         tabSpec.setIndicator("", getResources().getDrawable(R.drawable.camera_icon));
+        mTabHost.addTab(tabSpec, CameraFragment.class, null);
+
+        tabSpec = mTabHost.newTabSpec("my");
+        tabSpec.setIndicator("MY", null);
         mTabHost.addTab(tabSpec, CameraFragment.class, null);
 
     }
